@@ -32,9 +32,9 @@ class Note extends FlxSprite
 	public var colorSwap:ColorSwap;
 	public var inEditor:Bool = false;
 
-	public static var scales:Array<Float> = [0.7, 0.6, 0.55, 0.22, 0.2 /*tiny note lmao*/]; // 4k, 6k, 7k, 69k, 1000k
-	public static var swidths:Array<Float> = [160, 120, 110, 10, 0.7];
-	public static var posRest:Array<Int> = [0, 35, 50, 5, 5];
+	public static var scales:Array<Float> = [0.7 /*<4k*/, 0.6 /*<6k*/, 0.55 /*<7k*/, 0.22 /*<69k*/, 0.2 /*<1000k*/, 0.10 /*<1k*/]; // 4k, 6k, 7k, 69k, 1000k, 1k
+	public static var swidths:Array<Float> = [160 /*<4k*/, 120 /*<6k*/, 110 /*<7k*/, 10 /*<69k*/, 0.7 /*<1000k*/, 200 /*<1k*/];
+	public static var posRest:Array<Int> = [0 /*<4k*/, 35 /*<6k*/, 50 /*<7k*/, 5 /*<69k*/, 5 /*<1000k*/, 35 /*<1k*/];
 
 	public static var swagWidth:Float = 0.7;
 	public static var PURP_NOTE:Int = 0;
@@ -42,7 +42,8 @@ class Note extends FlxSprite
 	public static var BLUE_NOTE:Int = 1;
 	public static var RED_NOTE:Int = 3;
 
-	private function set_noteType(value:Int):Int {
+	private function set_noteType(value:Int):Int 
+	{
 		if(noteData > -1 && noteType != value) {
 			switch(value) {
 				case 3: //Hurt note

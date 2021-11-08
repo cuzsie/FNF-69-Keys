@@ -58,7 +58,79 @@ class ClientPrefs {
 		H, NONE,
 		J, NONE,
 		K, NONE,
-		L, NONE
+		L, NONE,
+
+		//69 keys (kill me)
+
+		ONE, NONE, // 1
+		TWO, NONE, // 2
+		THREE, NONE, // 3
+		FOUR, NONE, // 4
+		FIVE, NONE, // 5
+		SIX, NONE, // 6
+		SEVEN, NONE, // 7
+		EIGHT, NONE, // 8
+		NINE, NONE, // 9
+		ZERO, NONE, // 10
+		TAB, NONE, // 11
+		Q, NONE, // 12
+		W, NONE, // 13
+		E, NONE, // 14
+		R, NONE, // 15
+		T, NONE, // 16
+		Y, NONE, // 17
+		U, NONE, // 18
+		I, NONE, // 19
+		O, NONE, // 20
+		P, NONE, // 21
+		LBRACKET, NONE, // 22
+		RBRACKET, NONE, // 23
+		BACKSLASH, NONE, // 24
+		A, NONE, // 25
+		S, NONE, // 26
+		D, NONE, // 27
+		F, NONE, // 28 
+		G, NONE, // 29
+		H, NONE, // 30
+		J, NONE, // 31
+		K, NONE, // 32
+		L, NONE, // 33
+		SEMICOLON, NONE, // 34
+		QUOTE, NONE, // 35
+		Z, NONE, // 36
+		X, NONE, // 37
+		C, NONE, // 38
+		V, NONE, // 39
+		B, NONE, // 40
+		N, NONE, // 41
+		M, NONE, // 42
+		COMMA, NONE, // 43
+		PERIOD, NONE, // 44
+		SLASH, NONE, // 45
+		NUMPADZERO, NONE, // 46
+		NUMPADONE, NONE, // 47
+		NUMPADTWO, NONE, // 48
+		NUMPADTHREE, NONE, // 49
+		NUMPADFOUR, NONE, // 50
+		NUMPADFIVE, NONE, // 51
+		NUMPADSIX, NONE, // 52
+		NUMPADSEVEN, NONE, // 53
+		NUMPADEIGHT, NONE, // 54
+		NUMPADNINE, NONE, // 55
+		LEFT, NONE, // 56
+		DOWN, NONE, // 57
+		UP, NONE, // 58
+		RIGHT, NONE, // 59
+		F1, NONE, // 60
+		F2, NONE, // 61
+		F3, NONE, // 62
+		F4, NONE, // 63
+		F5, NONE, // 64
+		F6, NONE, // 65
+		F7, NONE, // 66
+		F8, NONE, // 67
+		F9, NONE, // 68
+		F10, NONE // 69
 	];
 	//Every key has two binds, these binds are defined on defaultKeys! If you want your control to be changeable, you have to add it on ControlsSubState (inside OptionsState)'s list
 	public static var keyBinds:Array<Dynamic> = [
