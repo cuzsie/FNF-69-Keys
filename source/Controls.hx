@@ -11,6 +11,13 @@ import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
 
+
+
+/*
+	Hey! If your checking the source code for this mod out, just know this might be the worst coded script in the mod
+	I had to write out each of these by hand for each of the 69 controls. I reccomend you dont edit this class.
+	This code is actually not that great and there is probably a way better way to do this.
+*/
 #if (haxe >= "4.0.0")
 enum abstract Action(String) to String from String
 {
@@ -99,8 +106,7 @@ enum abstract Action(String) to String from String
 	var B9_R = 'b9-release';
 
 
-	// for anyone wondering, yes i had to manually type this all out.
-
+	// 69 Key
 	var SIX_1 = 's1';
 	var SIX_2 = 's2';
 	var SIX_3 = 's3';
@@ -402,7 +408,7 @@ abstract Action(String) to String from String
 	var B9_R = 'b9-release';
 
 
-
+	// 69 Key
 	var SIX_1 = 's1';
 	var SIX_2 = 's2';
 	var SIX_3 = 's3';
@@ -660,6 +666,7 @@ enum Control
 	B9;
 
 
+	// 69 Key
 	SIX_1;
 	SIX_2;
 	SIX_3;
@@ -829,6 +836,230 @@ class Controls extends FlxActionSet
 	var _b8R = new FlxActionDigital(Action.B8_R);
 	var _b9R = new FlxActionDigital(Action.B9_R);
 
+
+
+
+
+
+
+
+
+	// 69 Key
+	var _six_1 = new FlxActionDigital(Action.SIX_1);
+	var _six_2 = new FlxActionDigital(Action.SIX_2);
+	var _six_3 = new FlxActionDigital(Action.SIX_3);
+	var _six_4 = new FlxActionDigital(Action.SIX_4);
+	var _six_5 = new FlxActionDigital(Action.SIX_5);
+	var _six_6 = new FlxActionDigital(Action.SIX_6);
+	var _six_7 = new FlxActionDigital(Action.SIX_7);
+	var _six_8 = new FlxActionDigital(Action.SIX_8);
+	var _six_9 = new FlxActionDigital(Action.SIX_9);
+	var _six_10 = new FlxActionDigital(Action.SIX_10);
+	var _six_11 = new FlxActionDigital(Action.SIX_11);
+	var _six_12 = new FlxActionDigital(Action.SIX_12);
+	var _six_13 = new FlxActionDigital(Action.SIX_13);
+	var _six_14 = new FlxActionDigital(Action.SIX_14);
+	var _six_15 = new FlxActionDigital(Action.SIX_15);
+	var _six_16 = new FlxActionDigital(Action.SIX_16);
+	var _six_17 = new FlxActionDigital(Action.SIX_17);
+	var _six_18 = new FlxActionDigital(Action.SIX_18);
+	var _six_19 = new FlxActionDigital(Action.SIX_19);
+	var _six_20 = new FlxActionDigital(Action.SIX_20);
+	var _six_21 = new FlxActionDigital(Action.SIX_21);
+	var _six_22 = new FlxActionDigital(Action.SIX_22);
+	var _six_23 = new FlxActionDigital(Action.SIX_23);
+	var _six_24 = new FlxActionDigital(Action.SIX_24);
+	var _six_25 = new FlxActionDigital(Action.SIX_25);
+	var _six_26 = new FlxActionDigital(Action.SIX_26);
+	var _six_27 = new FlxActionDigital(Action.SIX_27);
+	var _six_28 = new FlxActionDigital(Action.SIX_28);
+	var _six_29 = new FlxActionDigital(Action.SIX_29);
+	var _six_30 = new FlxActionDigital(Action.SIX_30);
+	var _six_31 = new FlxActionDigital(Action.SIX_31);
+	var _six_32 = new FlxActionDigital(Action.SIX_32);
+	var _six_33 = new FlxActionDigital(Action.SIX_33);
+	var _six_34 = new FlxActionDigital(Action.SIX_34);
+	var _six_35 = new FlxActionDigital(Action.SIX_35);
+	var _six_36 = new FlxActionDigital(Action.SIX_36);
+	var _six_37 = new FlxActionDigital(Action.SIX_37);
+	var _six_38 = new FlxActionDigital(Action.SIX_38);
+	var _six_39 = new FlxActionDigital(Action.SIX_39);
+	var _six_40 = new FlxActionDigital(Action.SIX_40);
+	var _six_41 = new FlxActionDigital(Action.SIX_41);
+	var _six_42 = new FlxActionDigital(Action.SIX_42);
+	var _six_43 = new FlxActionDigital(Action.SIX_43);
+	var _six_44 = new FlxActionDigital(Action.SIX_44);
+	var _six_45 = new FlxActionDigital(Action.SIX_45);
+	var _six_46 = new FlxActionDigital(Action.SIX_46);
+	var _six_47 = new FlxActionDigital(Action.SIX_47);
+	var _six_48 = new FlxActionDigital(Action.SIX_48);
+	var _six_49 = new FlxActionDigital(Action.SIX_49);
+	var _six_50 = new FlxActionDigital(Action.SIX_50);
+	var _six_51 = new FlxActionDigital(Action.SIX_51);
+	var _six_52 = new FlxActionDigital(Action.SIX_52);
+	var _six_53 = new FlxActionDigital(Action.SIX_53);
+	var _six_54 = new FlxActionDigital(Action.SIX_54);
+	var _six_55 = new FlxActionDigital(Action.SIX_55);
+	var _six_56 = new FlxActionDigital(Action.SIX_56);
+	var _six_57 = new FlxActionDigital(Action.SIX_57);
+	var _six_58 = new FlxActionDigital(Action.SIX_58);
+	var _six_59 = new FlxActionDigital(Action.SIX_59);
+	var _six_60 = new FlxActionDigital(Action.SIX_60);
+	var _six_61 = new FlxActionDigital(Action.SIX_61);
+	var _six_62 = new FlxActionDigital(Action.SIX_62);
+	var _six_63 = new FlxActionDigital(Action.SIX_63);
+	var _six_64 = new FlxActionDigital(Action.SIX_64);
+	var _six_65 = new FlxActionDigital(Action.SIX_65);
+	var _six_66 = new FlxActionDigital(Action.SIX_66);
+	var _six_67 = new FlxActionDigital(Action.SIX_67);
+	var _six_68 = new FlxActionDigital(Action.SIX_68);
+	var _six_69 = new FlxActionDigital(Action.SIX_69);
+
+													 
+	var _six_1P = new FlxActionDigital(Action.SIX_1_P);
+	var _six_2P = new FlxActionDigital(Action.SIX_2_P);
+	var _six_3P = new FlxActionDigital(Action.SIX_3_P);
+	var _six_4P = new FlxActionDigital(Action.SIX_4_P);
+	var _six_5P = new FlxActionDigital(Action.SIX_5_P);
+	var _six_6P = new FlxActionDigital(Action.SIX_6_P);
+	var _six_7P = new FlxActionDigital(Action.SIX_7_P);
+	var _six_8P = new FlxActionDigital(Action.SIX_8_P);
+	var _six_9P = new FlxActionDigital(Action.SIX_9_P); 
+	var _six_10P = new FlxActionDigital(Action.SIX_10_P);
+	var _six_11P = new FlxActionDigital(Action.SIX_11_P);
+	var _six_12P = new FlxActionDigital(Action.SIX_12_P);
+	var _six_13P = new FlxActionDigital(Action.SIX_13_P);
+	var _six_14P = new FlxActionDigital(Action.SIX_14_P);
+	var _six_15P = new FlxActionDigital(Action.SIX_15_P);
+	var _six_16P = new FlxActionDigital(Action.SIX_16_P);
+	var _six_17P = new FlxActionDigital(Action.SIX_17_P);
+	var _six_18P = new FlxActionDigital(Action.SIX_18_P);
+	var _six_19P = new FlxActionDigital(Action.SIX_19_P);
+	var _six_20P = new FlxActionDigital(Action.SIX_20_P);
+	var _six_21P = new FlxActionDigital(Action.SIX_21_P);
+	var _six_22P = new FlxActionDigital(Action.SIX_22_P);
+	var _six_23P = new FlxActionDigital(Action.SIX_23_P);
+	var _six_24P = new FlxActionDigital(Action.SIX_24_P);
+	var _six_25P = new FlxActionDigital(Action.SIX_25_P);
+	var _six_26P = new FlxActionDigital(Action.SIX_26_P);
+	var _six_27P = new FlxActionDigital(Action.SIX_27_P);
+	var _six_28P = new FlxActionDigital(Action.SIX_28_P);
+	var _six_29P = new FlxActionDigital(Action.SIX_29_P);
+	var _six_30P = new FlxActionDigital(Action.SIX_30_P);
+	var _six_31P = new FlxActionDigital(Action.SIX_31_P);
+	var _six_32P = new FlxActionDigital(Action.SIX_32_P);
+	var _six_33P = new FlxActionDigital(Action.SIX_33_P);
+	var _six_34P = new FlxActionDigital(Action.SIX_34_P);
+	var _six_35P = new FlxActionDigital(Action.SIX_35_P);
+	var _six_36P = new FlxActionDigital(Action.SIX_36_P);
+	var _six_37P = new FlxActionDigital(Action.SIX_37_P);
+	var _six_38P = new FlxActionDigital(Action.SIX_38_P);
+	var _six_39P = new FlxActionDigital(Action.SIX_39_P);
+	var _six_40P = new FlxActionDigital(Action.SIX_40_P);
+	var _six_41P = new FlxActionDigital(Action.SIX_41_P);
+	var _six_42P = new FlxActionDigital(Action.SIX_42_P);
+	var _six_43P = new FlxActionDigital(Action.SIX_43_P);
+	var _six_44P = new FlxActionDigital(Action.SIX_44_P);
+	var _six_45P = new FlxActionDigital(Action.SIX_45_P);
+	var _six_46P = new FlxActionDigital(Action.SIX_46_P);
+	var _six_47P = new FlxActionDigital(Action.SIX_47_P);
+	var _six_48P = new FlxActionDigital(Action.SIX_48_P);
+	var _six_49P = new FlxActionDigital(Action.SIX_49_P);
+	var _six_50P = new FlxActionDigital(Action.SIX_50_P);
+	var _six_51P = new FlxActionDigital(Action.SIX_51_P);
+	var _six_52P = new FlxActionDigital(Action.SIX_52_P);
+	var _six_53P = new FlxActionDigital(Action.SIX_53_P);
+	var _six_54P = new FlxActionDigital(Action.SIX_54_P);
+	var _six_55P = new FlxActionDigital(Action.SIX_55_P);
+	var _six_56P = new FlxActionDigital(Action.SIX_56_P);
+	var _six_57P = new FlxActionDigital(Action.SIX_57_P);
+	var _six_58P = new FlxActionDigital(Action.SIX_58_P);
+	var _six_59P = new FlxActionDigital(Action.SIX_59_P);
+	var _six_60P = new FlxActionDigital(Action.SIX_60_P);
+	var _six_61P = new FlxActionDigital(Action.SIX_61_P);
+	var _six_62P = new FlxActionDigital(Action.SIX_62_P);
+	var _six_63P = new FlxActionDigital(Action.SIX_63_P);
+	var _six_64P = new FlxActionDigital(Action.SIX_64_P);
+	var _six_65P = new FlxActionDigital(Action.SIX_65_P);
+	var _six_66P = new FlxActionDigital(Action.SIX_66_P);
+	var _six_67P = new FlxActionDigital(Action.SIX_67_P);
+	var _six_68P = new FlxActionDigital(Action.SIX_68_P);
+	var _six_69P = new FlxActionDigital(Action.SIX_69_P);
+
+													   
+	var _six_1R = new FlxActionDigital(Action.SIX_1_R);
+	var _six_2R = new FlxActionDigital(Action.SIX_2_R);
+	var _six_3R = new FlxActionDigital(Action.SIX_3_R);
+	var _six_4R = new FlxActionDigital(Action.SIX_4_R);
+	var _six_5R = new FlxActionDigital(Action.SIX_5_R);
+	var _six_6R = new FlxActionDigital(Action.SIX_6_R);
+	var _six_7R = new FlxActionDigital(Action.SIX_7_R);
+	var _six_8R = new FlxActionDigital(Action.SIX_8_R);
+	var _six_9R = new FlxActionDigital(Action.SIX_9_R); 
+	var _six_10R = new FlxActionDigital(Action.SIX_10_R);
+	var _six_11R = new FlxActionDigital(Action.SIX_11_R);
+	var _six_12R = new FlxActionDigital(Action.SIX_12_R);
+	var _six_13R = new FlxActionDigital(Action.SIX_13_R);
+	var _six_14R = new FlxActionDigital(Action.SIX_14_R);
+	var _six_15R = new FlxActionDigital(Action.SIX_15_R);
+	var _six_16R = new FlxActionDigital(Action.SIX_16_R);
+	var _six_17R = new FlxActionDigital(Action.SIX_17_R);
+	var _six_18R = new FlxActionDigital(Action.SIX_18_R);
+	var _six_19R = new FlxActionDigital(Action.SIX_19_R);
+	var _six_20R = new FlxActionDigital(Action.SIX_20_R);
+	var _six_21R = new FlxActionDigital(Action.SIX_21_R);
+	var _six_22R = new FlxActionDigital(Action.SIX_22_R);
+	var _six_23R = new FlxActionDigital(Action.SIX_23_R);
+	var _six_24R = new FlxActionDigital(Action.SIX_24_R);
+	var _six_25R = new FlxActionDigital(Action.SIX_25_R);
+	var _six_26R = new FlxActionDigital(Action.SIX_26_R);
+	var _six_27R = new FlxActionDigital(Action.SIX_27_R);
+	var _six_28R = new FlxActionDigital(Action.SIX_28_R);
+	var _six_29R = new FlxActionDigital(Action.SIX_29_R);
+	var _six_30R = new FlxActionDigital(Action.SIX_30_R);
+	var _six_31R = new FlxActionDigital(Action.SIX_31_R);
+	var _six_32R = new FlxActionDigital(Action.SIX_32_R);
+	var _six_33R = new FlxActionDigital(Action.SIX_33_R);
+	var _six_34R = new FlxActionDigital(Action.SIX_34_R);
+	var _six_35R = new FlxActionDigital(Action.SIX_35_R);
+	var _six_36R = new FlxActionDigital(Action.SIX_36_R);
+	var _six_37R = new FlxActionDigital(Action.SIX_37_R);
+	var _six_38R = new FlxActionDigital(Action.SIX_38_R);
+	var _six_39R = new FlxActionDigital(Action.SIX_39_R);
+	var _six_40R = new FlxActionDigital(Action.SIX_40_R);
+	var _six_41R = new FlxActionDigital(Action.SIX_41_R);
+	var _six_42R = new FlxActionDigital(Action.SIX_42_R);
+	var _six_43R = new FlxActionDigital(Action.SIX_43_R);
+	var _six_44R = new FlxActionDigital(Action.SIX_44_R);
+	var _six_45R = new FlxActionDigital(Action.SIX_45_R);
+	var _six_46R = new FlxActionDigital(Action.SIX_46_R);
+	var _six_47R = new FlxActionDigital(Action.SIX_47_R);
+	var _six_48R = new FlxActionDigital(Action.SIX_48_R);
+	var _six_49R = new FlxActionDigital(Action.SIX_49_R);
+	var _six_50R = new FlxActionDigital(Action.SIX_50_R);
+	var _six_51R = new FlxActionDigital(Action.SIX_51_R);
+	var _six_52R = new FlxActionDigital(Action.SIX_52_R);
+	var _six_53R = new FlxActionDigital(Action.SIX_53_R);
+	var _six_54R = new FlxActionDigital(Action.SIX_54_R);
+	var _six_55R = new FlxActionDigital(Action.SIX_55_R);
+	var _six_56R = new FlxActionDigital(Action.SIX_56_R);
+	var _six_57R = new FlxActionDigital(Action.SIX_57_R);
+	var _six_58R = new FlxActionDigital(Action.SIX_58_R);
+	var _six_59R = new FlxActionDigital(Action.SIX_59_R);
+	var _six_60R = new FlxActionDigital(Action.SIX_60_R);
+	var _six_61R = new FlxActionDigital(Action.SIX_61_R);
+	var _six_62R = new FlxActionDigital(Action.SIX_62_R);
+	var _six_63R = new FlxActionDigital(Action.SIX_63_R);
+	var _six_64R = new FlxActionDigital(Action.SIX_64_R);
+	var _six_65R = new FlxActionDigital(Action.SIX_65_R);
+	var _six_66R = new FlxActionDigital(Action.SIX_66_R);
+	var _six_67R = new FlxActionDigital(Action.SIX_67_R);
+	var _six_68R = new FlxActionDigital(Action.SIX_68_R);
+	var _six_69R = new FlxActionDigital(Action.SIX_69_R);
+
+
+
+
 	#if (haxe >= "4.0.0")
 	var byName:Map<String, FlxActionDigital> = [];
 	#else
@@ -837,6 +1068,1279 @@ class Controls extends FlxActionSet
 
 	public var gamepadsAdded:Array<Int> = [];
 	public var keyboardScheme = KeyboardScheme.None;
+
+
+	
+	// 69 Key
+	public var SIX_1(get, never):Bool;
+
+	inline function get_SIX_1()
+		return _six_1.check();
+	
+	public var SIX_2(get, never):Bool;
+
+	inline function get_SIX_2()
+		return _six_2.check();
+	
+	public var SIX_3(get, never):Bool;
+
+	inline function get_SIX_3()
+		return _six_3.check();
+	
+	
+	public var SIX_4(get, never):Bool;
+
+	inline function get_SIX_4()
+		return _six_4.check();
+	
+	
+	public var SIX_5(get, never):Bool;
+
+	inline function get_SIX_5()
+		return _six_5.check();
+	
+	
+	public var SIX_6(get, never):Bool;
+
+	inline function get_SIX_6()
+		return _six_6.check();
+	
+	
+	public var SIX_7(get, never):Bool;
+
+	inline function get_SIX_7()
+		return _six_7.check();
+	
+	
+	public var SIX_8(get, never):Bool;
+
+	inline function get_SIX_8()
+		return _six_8.check();
+	
+	
+	public var SIX_9(get, never):Bool;
+
+	inline function get_SIX_9()
+		return _six_1.check();
+	
+	
+	public var SIX_10(get, never):Bool;
+
+	inline function get_SIX_10()
+		return _six_10.check();
+	
+	
+	
+	public var SIX_11(get, never):Bool;
+
+	inline function get_SIX_11()
+		return _six_11.check();
+
+	
+	public var SIX_12(get, never):Bool;
+	
+	inline function get_SIX_12()
+		return _six_12.check();
+	
+	
+	public var SIX_13(get, never):Bool;
+
+	inline function get_SIX_13()
+		return _six_13.check();
+	
+	
+	public var SIX_14(get, never):Bool;
+
+	inline function get_SIX_14()
+		return _six_14.check();
+	
+	
+	public var SIX_15(get, never):Bool;
+
+	inline function get_SIX_15()
+		return _six_15.check();
+	
+	
+	public var SIX_16(get, never):Bool;
+
+	inline function get_SIX_16()
+		return _six_16.check();
+	
+	
+	public var SIX_17(get, never):Bool;
+
+	inline function get_SIX_17()
+		return _six_17.check();
+	
+	
+	public var SIX_18(get, never):Bool;
+
+	inline function get_SIX_18()
+		return _six_18.check();
+	
+	
+	public var SIX_19(get, never):Bool;
+
+	inline function get_SIX_19()
+		return _six_19.check();
+	
+	
+	public var SIX_20(get, never):Bool;
+
+	inline function get_SIX_20()
+		return _six_20.check();
+
+
+	public var SIX_21(get, never):Bool;
+
+	inline function get_SIX_21()
+		return _six_21.check();
+	
+	
+	public var SIX_22(get, never):Bool;
+
+	inline function get_SIX_22()
+		return _six_22.check();
+	
+	
+	public var SIX_23(get, never):Bool;
+
+	inline function get_SIX_23()
+		return _six_23.check();
+	
+	
+	public var SIX_24(get, never):Bool;
+
+	inline function get_SIX_24()
+		return _six_24.check();
+	
+	
+	public var SIX_25(get, never):Bool;
+
+	inline function get_SIX_25()
+		return _six_25.check();
+	
+	
+	public var SIX_26(get, never):Bool;
+
+	inline function get_SIX_26()
+		return _six_26.check();
+	
+	
+	public var SIX_27(get, never):Bool;
+
+	inline function get_SIX_27()
+		return _six_27.check();
+	
+	
+	public var SIX_28(get, never):Bool;
+
+	inline function get_SIX_28()
+		return _six_28.check();
+	
+	
+	public var SIX_29(get, never):Bool;
+
+	inline function get_SIX_29()
+		return _six_29.check();
+	
+	
+	public var SIX_30(get, never):Bool;
+
+	inline function get_SIX_30()
+		return _six_30.check();
+
+	public var SIX_31(get, never):Bool;
+
+	inline function get_SIX_31()
+		return _six_31.check();
+	
+	
+	public var SIX_32(get, never):Bool;
+
+	inline function get_SIX_32()
+		return _six_32.check();
+	
+	
+	public var SIX_33(get, never):Bool;
+
+	inline function get_SIX_33()
+		return _six_33.check();
+	
+	
+	public var SIX_34(get, never):Bool;
+
+	inline function get_SIX_34()
+		return _six_34.check();
+	
+	
+	public var SIX_35(get, never):Bool;
+
+	inline function get_SIX_35()
+		return _six_35.check();
+	
+	
+	public var SIX_36(get, never):Bool;
+
+	inline function get_SIX_36()
+		return _six_36.check();
+	
+	
+	public var SIX_37(get, never):Bool;
+
+	inline function get_SIX_37()
+		return _six_37.check();
+	
+	
+	public var SIX_38(get, never):Bool;
+
+	inline function get_SIX_38()
+		return _six_38.check();
+	
+	
+	public var SIX_39(get, never):Bool;
+
+	inline function get_SIX_39()
+		return _six_39.check();
+	
+	
+	
+	public var SIX_40(get, never):Bool;
+
+	inline function get_SIX_40()
+		return _six_40.check();
+	
+	public var SIX_41(get, never):Bool;
+	
+	inline function get_SIX_41()
+		return _six_41.check();
+	
+	
+	public var SIX_42(get, never):Bool;
+
+	inline function get_SIX_42()
+		return _six_42.check();
+	
+	public var SIX_43(get, never):Bool;
+
+	inline function get_SIX_43()
+		return _six_43.check();
+	
+	
+	public var SIX_44(get, never):Bool;
+
+	inline function get_SIX_44()
+		return _six_44.check();
+	
+	
+	public var SIX_45(get, never):Bool;
+
+	inline function get_SIX_45()
+		return _six_45.check();
+	
+	
+	public var SIX_46(get, never):Bool;
+
+	inline function get_SIX_46()
+		return _six_46.check();
+	
+	
+	public var SIX_47(get, never):Bool;
+
+	inline function get_SIX_47()
+		return _six_47.check();
+	
+	
+	public var SIX_48(get, never):Bool;
+
+	inline function get_SIX_48()
+		return _six_48.check();
+	
+	
+	public var SIX_49(get, never):Bool;
+
+	inline function get_SIX_49()
+		return _six_49.check();
+	
+	
+	public var SIX_50(get, never):Bool;
+
+	inline function get_SIX_50()
+		return _six_50.check();
+	
+	public var SIX_51(get, never):Bool;
+	
+	
+	inline function get_SIX_51()
+		return _six_51.check();
+	
+	
+	public var SIX_52(get, never):Bool;
+
+	inline function get_SIX_52()
+		return _six_52.check();
+	
+	
+	public var SIX_53(get, never):Bool;
+
+	inline function get_SIX_53()
+		return _six_53.check();
+	
+	
+	public var SIX_54(get, never):Bool;
+
+	inline function get_SIX_54()
+		return _six_54.check();
+
+	
+	public var SIX_55(get, never):Bool;
+
+	inline function get_SIX_55()
+		return _six_55.check();
+	
+	
+	public var SIX_56(get, never):Bool;
+
+	inline function get_SIX_56()
+		return _six_56.check();
+	
+	
+	public var SIX_57(get, never):Bool;
+
+	inline function get_SIX_57()
+		return _six_57.check();
+	
+	
+	public var SIX_58(get, never):Bool;
+
+	inline function get_SIX_58()
+		return _six_58.check();
+	
+	
+	public var SIX_59(get, never):Bool;
+
+	inline function get_SIX_59()
+		return _six_59.check();
+	
+	
+	public var SIX_60(get, never):Bool;
+
+	inline function get_SIX_60()
+		return _six_60.check();
+
+	public var SIX_61(get, never):Bool;
+
+	inline function get_SIX_61()
+		return _six_61.check();
+	
+	
+	public var SIX_62(get, never):Bool;
+
+	inline function get_SIX_62()
+		return _six_62.check();
+	
+	
+	public var SIX_63(get, never):Bool;
+
+	inline function get_SIX_63()
+		return _six_63.check();
+	
+	
+	public var SIX_64(get, never):Bool;
+
+	inline function get_SIX_64()
+		return _six_64.check();
+	
+	
+	public var SIX_65(get, never):Bool;
+
+	inline function get_SIX_65()
+		return _six_65.check();
+	
+	
+	public var SIX_66(get, never):Bool;
+
+	inline function get_SIX_66()
+		return _six_66.check();
+	
+	
+	public var SIX_67(get, never):Bool;
+
+	inline function get_SIX_67()
+		return _six_67.check();
+	
+	
+	public var SIX_68(get, never):Bool;
+
+	inline function get_SIX_68()
+		return _six_68.check();
+	
+	
+	public var SIX_69(get, never):Bool;
+
+	inline function get_SIX_69()
+		return _six_69.check();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public var SIX_1_P(get, never):Bool;
+
+	inline function get_SIX_1_P()
+		return _six_1P.check();
+	
+	public var SIX_2_P(get, never):Bool;
+
+	inline function get_SIX_2_P()
+		return _six_2P.check();
+	
+	public var SIX_3_P(get, never):Bool;
+
+	inline function get_SIX_3_P()
+		return _six_3P.check();
+	
+	
+	public var SIX_4_P(get, never):Bool;
+
+	inline function get_SIX_4_P()
+		return _six_4P.check();
+	
+	
+	public var SIX_5_P(get, never):Bool;
+
+	inline function get_SIX_5_P()
+		return _six_5P.check();
+	
+	
+	public var SIX_6_P(get, never):Bool;
+
+	inline function get_SIX_6_P()
+		return _six_6P.check();
+	
+	
+	public var SIX_7_P(get, never):Bool;
+
+	inline function get_SIX_7_P()
+		return _six_7P.check();
+	
+	
+	public var SIX_8_P(get, never):Bool;
+
+	inline function get_SIX_8_P()
+		return _six_8P.check();
+	
+	
+	public var SIX_9_P(get, never):Bool;
+
+	inline function get_SIX_9_P()
+		return _six_1P.check();
+	
+	
+	public var SIX_10_P(get, never):Bool;
+
+	inline function get_SIX_10_P()
+		return _six_10P.check();
+	
+	
+	
+	public var SIX_11_P(get, never):Bool;
+
+	inline function get_SIX_11_P()
+		return _six_11P.check();
+
+	
+	public var SIX_12_P(get, never):Bool;
+	
+	inline function get_SIX_12_P()
+		return _six_12P.check();
+	
+	
+	public var SIX_13_P(get, never):Bool;
+
+	inline function get_SIX_13_P()
+		return _six_13P.check();
+	
+	
+	public var SIX_14_P(get, never):Bool;
+
+	inline function get_SIX_14_P()
+		return _six_14P.check();
+	
+	
+	public var SIX_15_P(get, never):Bool;
+
+	inline function get_SIX_15_P()
+		return _six_15P.check();
+	
+	
+	public var SIX_16_P(get, never):Bool;
+
+	inline function get_SIX_16_P()
+		return _six_16P.check();
+	
+	
+	public var SIX_17_P(get, never):Bool;
+
+	inline function get_SIX_17_P()
+		return _six_17P.check();
+	
+	
+	public var SIX_18_P(get, never):Bool;
+
+	inline function get_SIX_18_P()
+		return _six_18P.check();
+	
+	
+	public var SIX_19_P(get, never):Bool;
+
+	inline function get_SIX_19_P()
+		return _six_19P.check();
+	
+	
+	public var SIX_20_P(get, never):Bool;
+
+	inline function get_SIX_20_P()
+		return _six_20P.check();
+
+
+	public var SIX_21_P(get, never):Bool;
+
+	inline function get_SIX_21_P()
+		return _six_21P.check();
+	
+	
+	public var SIX_22_P(get, never):Bool;
+
+	inline function get_SIX_22_P()
+		return _six_22P.check();
+	
+	
+	public var SIX_23_P(get, never):Bool;
+
+	inline function get_SIX_23_P()
+		return _six_23P.check();
+	
+	
+	public var SIX_24_P(get, never):Bool;
+
+	inline function get_SIX_24_P()
+		return _six_24P.check();
+	
+	
+	public var SIX_25_P(get, never):Bool;
+
+	inline function get_SIX_25_P()
+		return _six_25P.check();
+	
+	
+	public var SIX_26_P(get, never):Bool;
+
+	inline function get_SIX_26_P()
+		return _six_26P.check();
+	
+	
+	public var SIX_27_P(get, never):Bool;
+
+	inline function get_SIX_27_P()
+		return _six_27P.check();
+	
+	
+	public var SIX_28_P(get, never):Bool;
+
+	inline function get_SIX_28_P()
+		return _six_28P.check();
+	
+	
+	public var SIX_29_P(get, never):Bool;
+
+	inline function get_SIX_29_P()
+		return _six_29P.check();
+	
+	
+	public var SIX_30_P(get, never):Bool;
+
+	inline function get_SIX_30_P()
+		return _six_30P.check();
+
+	public var SIX_31_P(get, never):Bool;
+
+	inline function get_SIX_31_P()
+		return _six_31P.check();
+	
+	
+	public var SIX_32_P(get, never):Bool;
+
+	inline function get_SIX_32_P()
+		return _six_32P.check();
+	
+	
+	public var SIX_33_P(get, never):Bool;
+
+	inline function get_SIX_33_P()
+		return _six_33P.check();
+	
+	
+	public var SIX_34_P(get, never):Bool;
+
+	inline function get_SIX_34_P()
+		return _six_34P.check();
+	
+	
+	public var SIX_35_P(get, never):Bool;
+
+	inline function get_SIX_35_P()
+		return _six_35P.check();
+	
+	
+	public var SIX_36_P(get, never):Bool;
+
+	inline function get_SIX_36_P()
+		return _six_36P.check();
+	
+	
+	public var SIX_37_P(get, never):Bool;
+
+	inline function get_SIX_37_P()
+		return _six_37P.check();
+	
+	
+	public var SIX_38_P(get, never):Bool;
+
+	inline function get_SIX_38_P()
+		return _six_38P.check();
+	
+	
+	public var SIX_39_P(get, never):Bool;
+
+	inline function get_SIX_39_P()
+		return _six_39P.check();
+	
+	
+	
+	public var SIX_40_P(get, never):Bool;
+
+	inline function get_SIX_40_P()
+		return _six_40P.check();
+	
+	public var SIX_41_P(get, never):Bool;
+	
+	inline function get_SIX_41_P()
+		return _six_41P.check();
+	
+	
+	public var SIX_42_P(get, never):Bool;
+
+	inline function get_SIX_42_P()
+		return _six_42P.check();
+	
+	public var SIX_43_P(get, never):Bool;
+
+	inline function get_SIX_43_P()
+		return _six_43P.check();
+	
+	
+	public var SIX_44_P(get, never):Bool;
+
+	inline function get_SIX_44_P()
+		return _six_44P.check();
+	
+	
+	public var SIX_45_P(get, never):Bool;
+
+	inline function get_SIX_45_P()
+		return _six_45P.check();
+	
+	
+	public var SIX_46_P(get, never):Bool;
+
+	inline function get_SIX_46_P()
+		return _six_46P.check();
+	
+	
+	public var SIX_47_P(get, never):Bool;
+
+	inline function get_SIX_47_P()
+		return _six_47P.check();
+	
+	
+	public var SIX_48_P(get, never):Bool;
+
+	inline function get_SIX_48_P()
+		return _six_48P.check();
+	
+	
+	public var SIX_49_P(get, never):Bool;
+
+	inline function get_SIX_49_P()
+		return _six_49P.check();
+	
+	
+	public var SIX_50_P(get, never):Bool;
+
+	inline function get_SIX_50_P()
+		return _six_50P.check();
+	
+	public var SIX_51_P(get, never):Bool;
+	
+	
+	inline function get_SIX_51_P()
+		return _six_51P.check();
+	
+	
+	public var SIX_52_P(get, never):Bool;
+
+	inline function get_SIX_52_P()
+		return _six_52P.check();
+	
+	
+	public var SIX_53_P(get, never):Bool;
+
+	inline function get_SIX_53_P()
+		return _six_53P.check();
+	
+	
+	public var SIX_54_P(get, never):Bool;
+
+	inline function get_SIX_54_P()
+		return _six_54P.check();
+
+	
+	public var SIX_55_P(get, never):Bool;
+
+	inline function get_SIX_55_P()
+		return _six_55P.check();
+	
+	
+	public var SIX_56_P(get, never):Bool;
+
+	inline function get_SIX_56_P()
+		return _six_56P.check();
+	
+	
+	public var SIX_57_P(get, never):Bool;
+
+	inline function get_SIX_57_P()
+		return _six_57P.check();
+	
+	
+	public var SIX_58_P(get, never):Bool;
+
+	inline function get_SIX_58_P()
+		return _six_58P.check();
+	
+	
+	public var SIX_59_P(get, never):Bool;
+
+	inline function get_SIX_59_P()
+		return _six_59P.check();
+	
+	
+	public var SIX_60_P(get, never):Bool;
+
+	inline function get_SIX_60_P()
+		return _six_60P.check();
+
+	public var SIX_61_P(get, never):Bool;
+
+	inline function get_SIX_61_P()
+		return _six_61P.check();
+	
+	
+	public var SIX_62_P(get, never):Bool;
+
+	inline function get_SIX_62_P()
+		return _six_62P.check();
+	
+	
+	public var SIX_63_P(get, never):Bool;
+
+	inline function get_SIX_63_P()
+		return _six_63P.check();
+	
+	
+	public var SIX_64_P(get, never):Bool;
+
+	inline function get_SIX_64_P()
+		return _six_64P.check();
+	
+	
+	public var SIX_65_P(get, never):Bool;
+
+	inline function get_SIX_65_P()
+		return _six_65P.check();
+	
+	
+	public var SIX_66_P(get, never):Bool;
+
+	inline function get_SIX_66_P()
+		return _six_66P.check();
+	
+	
+	public var SIX_67_P(get, never):Bool;
+
+	inline function get_SIX_67_P()
+		return _six_67P.check();
+	
+	
+	public var SIX_68_P(get, never):Bool;
+
+	inline function get_SIX_68_P()
+		return _six_68P.check();
+	
+	
+	public var SIX_69_P(get, never):Bool;
+
+	inline function get_SIX_69_P()
+		return _six_69P.check();
+
+
+
+	public var SIX_1_R(get, never):Bool;
+
+	inline function get_SIX_1_R()
+		return _six_1R.check();
+	
+	public var SIX_2_R(get, never):Bool;
+
+	inline function get_SIX_2_R()
+		return _six_2R.check();
+	
+	public var SIX_3_R(get, never):Bool;
+
+	inline function get_SIX_3_R()
+		return _six_3R.check();
+	
+	
+	public var SIX_4_R(get, never):Bool;
+
+	inline function get_SIX_4_R()
+		return _six_4R.check();
+	
+	
+	public var SIX_5_R(get, never):Bool;
+
+	inline function get_SIX_5_R()
+		return _six_5R.check();
+	
+	
+	public var SIX_6_R(get, never):Bool;
+
+	inline function get_SIX_6_R()
+		return _six_6R.check();
+	
+	
+	public var SIX_7_R(get, never):Bool;
+
+	inline function get_SIX_7_R()
+		return _six_7R.check();
+	
+	
+	public var SIX_8_R(get, never):Bool;
+
+	inline function get_SIX_8_R()
+		return _six_8R.check();
+	
+	
+	public var SIX_9_R(get, never):Bool;
+
+	inline function get_SIX_9_R()
+		return _six_1R.check();
+	
+	
+	public var SIX_10_R(get, never):Bool;
+
+	inline function get_SIX_10_R()
+		return _six_10R.check();
+	
+	
+	
+	public var SIX_11_R(get, never):Bool;
+
+	inline function get_SIX_11_R()
+		return _six_11R.check();
+
+	
+	public var SIX_12_R(get, never):Bool;
+	
+	inline function get_SIX_12_R()
+		return _six_12R.check();
+	
+	
+	public var SIX_13_R(get, never):Bool;
+
+	inline function get_SIX_13_R()
+		return _six_13R.check();
+	
+	
+	public var SIX_14_R(get, never):Bool;
+
+	inline function get_SIX_14_R()
+		return _six_14R.check();
+	
+	
+	public var SIX_15_R(get, never):Bool;
+
+	inline function get_SIX_15_R()
+		return _six_15R.check();
+	
+	
+	public var SIX_16_R(get, never):Bool;
+
+	inline function get_SIX_16_R()
+		return _six_16R.check();
+	
+	
+	public var SIX_17_R(get, never):Bool;
+
+	inline function get_SIX_17_R()
+		return _six_17R.check();
+	
+	
+	public var SIX_18_R(get, never):Bool;
+
+	inline function get_SIX_18_R()
+		return _six_18R.check();
+	
+	
+	public var SIX_19_R(get, never):Bool;
+
+	inline function get_SIX_19_R()
+		return _six_19R.check();
+	
+	
+	public var SIX_20_R(get, never):Bool;
+
+	inline function get_SIX_20_R()
+		return _six_20R.check();
+
+
+	public var SIX_21_R(get, never):Bool;
+
+	inline function get_SIX_21_R()
+		return _six_21R.check();
+	
+	
+	public var SIX_22_R(get, never):Bool;
+
+	inline function get_SIX_22_R()
+		return _six_22R.check();
+	
+	
+	public var SIX_23_R(get, never):Bool;
+
+	inline function get_SIX_23_R()
+		return _six_23R.check();
+	
+	
+	public var SIX_24_R(get, never):Bool;
+
+	inline function get_SIX_24_R()
+		return _six_24R.check();
+	
+	
+	public var SIX_25_R(get, never):Bool;
+
+	inline function get_SIX_25_R()
+		return _six_25R.check();
+	
+	
+	public var SIX_26_R(get, never):Bool;
+
+	inline function get_SIX_26_R()
+		return _six_26R.check();
+	
+	
+	public var SIX_27_R(get, never):Bool;
+
+	inline function get_SIX_27_R()
+		return _six_27R.check();
+	
+	
+	public var SIX_28_R(get, never):Bool;
+
+	inline function get_SIX_28_R()
+		return _six_28R.check();
+	
+	
+	public var SIX_29_R(get, never):Bool;
+
+	inline function get_SIX_29_R()
+		return _six_29R.check();
+	
+	
+	public var SIX_30_R(get, never):Bool;
+
+	inline function get_SIX_30_R()
+		return _six_30R.check();
+
+	public var SIX_31_R(get, never):Bool;
+
+	inline function get_SIX_31_R()
+		return _six_31R.check();
+	
+	
+	public var SIX_32_R(get, never):Bool;
+
+	inline function get_SIX_32_R()
+		return _six_32R.check();
+	
+	
+	public var SIX_33_R(get, never):Bool;
+
+	inline function get_SIX_33_R()
+		return _six_33R.check();
+	
+	
+	public var SIX_34_R(get, never):Bool;
+
+	inline function get_SIX_34_R()
+		return _six_34R.check();
+	
+	
+	public var SIX_35_R(get, never):Bool;
+
+	inline function get_SIX_35_R()
+		return _six_35R.check();
+	
+	
+	public var SIX_36_R(get, never):Bool;
+
+	inline function get_SIX_36_R()
+		return _six_36R.check();
+	
+	
+	public var SIX_37_R(get, never):Bool;
+
+	inline function get_SIX_37_R()
+		return _six_37R.check();
+	
+	
+	public var SIX_38_R(get, never):Bool;
+
+	inline function get_SIX_38_R()
+		return _six_38R.check();
+	
+	
+	public var SIX_39_R(get, never):Bool;
+
+	inline function get_SIX_39_R()
+		return _six_39R.check();
+	
+	
+	
+	public var SIX_40_R(get, never):Bool;
+
+	inline function get_SIX_40_R()
+		return _six_40R.check();
+	
+	public var SIX_41_R(get, never):Bool;
+	
+	inline function get_SIX_41_R()
+		return _six_41R.check();
+	
+	
+	public var SIX_42_R(get, never):Bool;
+
+	inline function get_SIX_42_R()
+		return _six_42R.check();
+	
+	public var SIX_43_R(get, never):Bool;
+
+	inline function get_SIX_43_R()
+		return _six_43R.check();
+	
+	
+	public var SIX_44_R(get, never):Bool;
+
+	inline function get_SIX_44_R()
+		return _six_44R.check();
+	
+	
+	public var SIX_45_R(get, never):Bool;
+
+	inline function get_SIX_45_R()
+		return _six_45R.check();
+	
+	
+	public var SIX_46_R(get, never):Bool;
+
+	inline function get_SIX_46_R()
+		return _six_46R.check();
+	
+	
+	public var SIX_47_R(get, never):Bool;
+
+	inline function get_SIX_47_R()
+		return _six_47R.check();
+	
+	
+	public var SIX_48_R(get, never):Bool;
+
+	inline function get_SIX_48_R()
+		return _six_48R.check();
+	
+	
+	public var SIX_49_R(get, never):Bool;
+
+	inline function get_SIX_49_R()
+		return _six_49R.check();
+	
+	
+	public var SIX_50_R(get, never):Bool;
+
+	inline function get_SIX_50_R()
+		return _six_50R.check();
+	
+	public var SIX_51_R(get, never):Bool;
+	
+	
+	inline function get_SIX_51_R()
+		return _six_51R.check();
+	
+	
+	public var SIX_52_R(get, never):Bool;
+
+	inline function get_SIX_52_R()
+		return _six_52R.check();
+	
+	
+	public var SIX_53_R(get, never):Bool;
+
+	inline function get_SIX_53_R()
+		return _six_53R.check();
+	
+	
+	public var SIX_54_R(get, never):Bool;
+
+	inline function get_SIX_54_R()
+		return _six_54R.check();
+
+	
+	public var SIX_55_R(get, never):Bool;
+
+	inline function get_SIX_55_R()
+		return _six_55R.check();
+	
+	
+	public var SIX_56_R(get, never):Bool;
+
+	inline function get_SIX_56_R()
+		return _six_56R.check();
+	
+	
+	public var SIX_57_R(get, never):Bool;
+
+	inline function get_SIX_57_R()
+		return _six_57R.check();
+	
+	
+	public var SIX_58_R(get, never):Bool;
+
+	inline function get_SIX_58_R()
+		return _six_58R.check();
+	
+	
+	public var SIX_59_R(get, never):Bool;
+
+	inline function get_SIX_59_R()
+		return _six_59R.check();
+	
+	
+	public var SIX_60_R(get, never):Bool;
+
+	inline function get_SIX_60_R()
+		return _six_60R.check();
+
+	public var SIX_61_R(get, never):Bool;
+
+	inline function get_SIX_61_R()
+		return _six_61R.check();
+	
+	
+	public var SIX_62_R(get, never):Bool;
+
+	inline function get_SIX_62_R()
+		return _six_62R.check();
+	
+	
+	public var SIX_63_R(get, never):Bool;
+
+	inline function get_SIX_63_R()
+		return _six_63R.check();
+	
+	
+	public var SIX_64_R(get, never):Bool;
+
+	inline function get_SIX_64_R()
+		return _six_64R.check();
+	
+	
+	public var SIX_65_R(get, never):Bool;
+
+	inline function get_SIX_65_R()
+		return _six_65R.check();
+	
+	
+	public var SIX_66_R(get, never):Bool;
+
+	inline function get_SIX_66_R()
+		return _six_66R.check();
+	
+	
+	public var SIX_67_R(get, never):Bool;
+
+	inline function get_SIX_67_R()
+		return _six_67R.check();
+	
+	
+	public var SIX_68_R(get, never):Bool;
+
+	inline function get_SIX_68_R()
+		return _six_68R.check();
+	
+	
+	public var SIX_69_R(get, never):Bool;
+
+	inline function get_SIX_69_R()
+		return _six_69R.check();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public var UI_UP(get, never):Bool;
 
@@ -1038,6 +2542,236 @@ class Controls extends FlxActionSet
 	{
 		super(name);
 
+		// 69 Key
+		add(_six_1);
+		add(_six_2);
+		add(_six_3);
+		add(_six_4);
+		add(_six_5);
+		add(_six_6);
+		add(_six_7);
+		add(_six_8);
+		add(_six_9);
+		add(_six_10);
+		add(_six_11);
+		add(_six_12);
+		add(_six_13);
+		add(_six_14);
+		add(_six_15);
+		add(_six_16);
+		add(_six_17);
+		add(_six_18);
+		add(_six_19);
+		add(_six_20);
+		add(_six_21);
+		add(_six_22);
+		add(_six_23);
+		add(_six_24);
+		add(_six_25);
+		add(_six_26);
+		add(_six_27);
+		add(_six_28);
+		add(_six_29);
+		add(_six_30);
+		add(_six_31);
+		add(_six_32);
+		add(_six_33);
+		add(_six_34);
+		add(_six_35);
+		add(_six_36);
+		add(_six_37);
+		add(_six_38);
+		add(_six_39);
+		add(_six_40);
+		add(_six_41);
+		add(_six_42);
+		add(_six_43);
+		add(_six_44);
+		add(_six_45);
+		add(_six_46);
+		add(_six_47);
+		add(_six_48);
+		add(_six_49);
+		add(_six_50);
+		add(_six_51);
+		add(_six_52);
+		add(_six_53);
+		add(_six_54);
+		add(_six_55);
+		add(_six_56);
+		add(_six_57);
+		add(_six_58);
+		add(_six_59);
+		add(_six_60);
+		add(_six_61);
+		add(_six_62);
+		add(_six_63);
+		add(_six_64);
+		add(_six_65);
+		add(_six_66);
+		add(_six_67);
+		add(_six_68);
+		add(_six_69);
+		
+		add(_six_1P);
+		add(_six_2P);
+		add(_six_3P);
+		add(_six_4P);
+		add(_six_5P);
+		add(_six_6P);
+		add(_six_7P);
+		add(_six_8P);
+		add(_six_9P);
+		add(_six_10P);
+		add(_six_11P);
+		add(_six_12P);
+		add(_six_13P);
+		add(_six_14P);
+		add(_six_15P);
+		add(_six_16P);
+		add(_six_17P);
+		add(_six_18P);
+		add(_six_19P);
+		add(_six_20P);
+		add(_six_21P);
+		add(_six_22P);
+		add(_six_23P);
+		add(_six_24P);
+		add(_six_25P);
+		add(_six_26P);
+		add(_six_27P);
+		add(_six_28P);
+		add(_six_29P);
+		add(_six_30P);
+		add(_six_31P);
+		add(_six_32P);
+		add(_six_33P);
+		add(_six_34P);
+		add(_six_35P);
+		add(_six_36P);
+		add(_six_37P);
+		add(_six_38P);
+		add(_six_39P);
+		add(_six_40P);
+		add(_six_41P);
+		add(_six_42P);
+		add(_six_43P);
+		add(_six_44P);
+		add(_six_45P);
+		add(_six_46P);
+		add(_six_47P);
+		add(_six_48P);
+		add(_six_49P);
+		add(_six_50P);
+		add(_six_51P);
+		add(_six_52P);
+		add(_six_53P);
+		add(_six_54P);
+		add(_six_55P);
+		add(_six_56P);
+		add(_six_57P);
+		add(_six_58P);
+		add(_six_59P);
+		add(_six_60P);
+		add(_six_61P);
+		add(_six_62P);
+		add(_six_63P);
+		add(_six_64P);
+		add(_six_65P);
+		add(_six_66P);
+		add(_six_67P);
+		add(_six_68P);
+		add(_six_69P);
+		
+		
+		
+		
+		
+		add(_six_1R);
+		add(_six_2R);
+		add(_six_3R);
+		add(_six_4R);
+		add(_six_5R);
+		add(_six_6R);
+		add(_six_7R);
+		add(_six_8R);
+		add(_six_9R);
+		add(_six_10R);
+		add(_six_11R);
+		add(_six_12R);
+		add(_six_13R);
+		add(_six_14R);
+		add(_six_15R);
+		add(_six_16R);
+		add(_six_17R);
+		add(_six_18R);
+		add(_six_19R);
+		add(_six_20R);
+		add(_six_21R);
+		add(_six_22R);
+		add(_six_23R);
+		add(_six_24R);
+		add(_six_25R);
+		add(_six_26R);
+		add(_six_27R);
+		add(_six_28R);
+		add(_six_29R);
+		add(_six_30R);
+		add(_six_31R);
+		add(_six_32R);
+		add(_six_33R);
+		add(_six_34R);
+		add(_six_35R);
+		add(_six_36R);
+		add(_six_37R);
+		add(_six_38R);
+		add(_six_39R);
+		add(_six_40R);
+		add(_six_41R);
+		add(_six_42R);
+		add(_six_43R);
+		add(_six_44R);
+		add(_six_45R);
+		add(_six_46R);
+		add(_six_47R);
+		add(_six_48R);
+		add(_six_49R);
+		add(_six_50R);
+		add(_six_51R);
+		add(_six_52R);
+		add(_six_53R);
+		add(_six_54R);
+		add(_six_55R);
+		add(_six_56R);
+		add(_six_57R);
+		add(_six_58R);
+		add(_six_59R);
+		add(_six_60R);
+		add(_six_61R);
+		add(_six_62R);
+		add(_six_63R);
+		add(_six_64R);
+		add(_six_65R);
+		add(_six_66R);
+		add(_six_67R);
+		add(_six_68R);
+		add(_six_69R);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		add(_ui_up);
 		add(_ui_left);
 		add(_ui_right);
@@ -1132,6 +2866,233 @@ class Controls extends FlxActionSet
 	{
 		super(name);
 
+
+		// 69 Key
+		add(_six_1);
+		add(_six_2);
+		add(_six_3);
+		add(_six_4);
+		add(_six_5);
+		add(_six_6);
+		add(_six_7);
+		add(_six_8);
+		add(_six_9);
+		add(_six_10);
+		add(_six_11);
+		add(_six_12);
+		add(_six_13);
+		add(_six_14);
+		add(_six_15);
+		add(_six_16);
+		add(_six_17);
+		add(_six_18);
+		add(_six_19);
+		add(_six_20);
+		add(_six_21);
+		add(_six_22);
+		add(_six_23);
+		add(_six_24);
+		add(_six_25);
+		add(_six_26);
+		add(_six_27);
+		add(_six_28);
+		add(_six_29);
+		add(_six_30);
+		add(_six_31);
+		add(_six_32);
+		add(_six_33);
+		add(_six_34);
+		add(_six_35);
+		add(_six_36);
+		add(_six_37);
+		add(_six_38);
+		add(_six_39);
+		add(_six_40);
+		add(_six_41);
+		add(_six_42);
+		add(_six_43);
+		add(_six_44);
+		add(_six_45);
+		add(_six_46);
+		add(_six_47);
+		add(_six_48);
+		add(_six_49);
+		add(_six_50);
+		add(_six_51);
+		add(_six_52);
+		add(_six_53);
+		add(_six_54);
+		add(_six_55);
+		add(_six_56);
+		add(_six_57);
+		add(_six_58);
+		add(_six_59);
+		add(_six_60);
+		add(_six_61);
+		add(_six_62);
+		add(_six_63);
+		add(_six_64);
+		add(_six_65);
+		add(_six_66);
+		add(_six_67);
+		add(_six_68);
+		add(_six_69);
+		
+		add(_six_1P);
+		add(_six_2P);
+		add(_six_3P);
+		add(_six_4P);
+		add(_six_5P);
+		add(_six_6P);
+		add(_six_7P);
+		add(_six_8P);
+		add(_six_9P);
+		add(_six_10P);
+		add(_six_11P);
+		add(_six_12P);
+		add(_six_13P);
+		add(_six_14P);
+		add(_six_15P);
+		add(_six_16P);
+		add(_six_17P);
+		add(_six_18P);
+		add(_six_19P);
+		add(_six_20P);
+		add(_six_21P);
+		add(_six_22P);
+		add(_six_23P);
+		add(_six_24P);
+		add(_six_25P);
+		add(_six_26P);
+		add(_six_27P);
+		add(_six_28P);
+		add(_six_29P);
+		add(_six_30P);
+		add(_six_31P);
+		add(_six_32P);
+		add(_six_33P);
+		add(_six_34P);
+		add(_six_35P);
+		add(_six_36P);
+		add(_six_37P);
+		add(_six_38P);
+		add(_six_39P);
+		add(_six_40P);
+		add(_six_41P);
+		add(_six_42P);
+		add(_six_43P);
+		add(_six_44P);
+		add(_six_45P);
+		add(_six_46P);
+		add(_six_47P);
+		add(_six_48P);
+		add(_six_49P);
+		add(_six_50P);
+		add(_six_51P);
+		add(_six_52P);
+		add(_six_53P);
+		add(_six_54P);
+		add(_six_55P);
+		add(_six_56P);
+		add(_six_57P);
+		add(_six_58P);
+		add(_six_59P);
+		add(_six_60P);
+		add(_six_61P);
+		add(_six_62P);
+		add(_six_63P);
+		add(_six_64P);
+		add(_six_65P);
+		add(_six_66P);
+		add(_six_67P);
+		add(_six_68P);
+		add(_six_69P);
+		
+		
+		
+		
+		
+		add(_six_1R);
+		add(_six_2R);
+		add(_six_3R);
+		add(_six_4R);
+		add(_six_5R);
+		add(_six_6R);
+		add(_six_7R);
+		add(_six_8R);
+		add(_six_9R);
+		add(_six_10R);
+		add(_six_11R);
+		add(_six_12R);
+		add(_six_13R);
+		add(_six_14R);
+		add(_six_15R);
+		add(_six_16R);
+		add(_six_17R);
+		add(_six_18R);
+		add(_six_19R);
+		add(_six_20R);
+		add(_six_21R);
+		add(_six_22R);
+		add(_six_23R);
+		add(_six_24R);
+		add(_six_25R);
+		add(_six_26R);
+		add(_six_27R);
+		add(_six_28R);
+		add(_six_29R);
+		add(_six_30R);
+		add(_six_31R);
+		add(_six_32R);
+		add(_six_33R);
+		add(_six_34R);
+		add(_six_35R);
+		add(_six_36R);
+		add(_six_37R);
+		add(_six_38R);
+		add(_six_39R);
+		add(_six_40R);
+		add(_six_41R);
+		add(_six_42R);
+		add(_six_43R);
+		add(_six_44R);
+		add(_six_45R);
+		add(_six_46R);
+		add(_six_47R);
+		add(_six_48R);
+		add(_six_49R);
+		add(_six_50R);
+		add(_six_51R);
+		add(_six_52R);
+		add(_six_53R);
+		add(_six_54R);
+		add(_six_55R);
+		add(_six_56R);
+		add(_six_57R);
+		add(_six_58R);
+		add(_six_59R);
+		add(_six_60R);
+		add(_six_61R);
+		add(_six_62R);
+		add(_six_63R);
+		add(_six_64R);
+		add(_six_65R);
+		add(_six_66R);
+		add(_six_67R);
+		add(_six_68R);
+		add(_six_69R);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		add(_ui_up);
 		add(_ui_left);
 		add(_ui_right);
@@ -1260,6 +3221,88 @@ class Controls extends FlxActionSet
 	{
 		return switch (control)
 		{
+			case SIX_1: _six_1;
+			case SIX_2: _six_2;
+			case SIX_3: _six_3;
+			case SIX_4: _six_4;
+			case SIX_5: _six_5;
+			case SIX_6: _six_6;
+			case SIX_7: _six_7;
+			case SIX_8: _six_8;
+			case SIX_9: _six_9;
+			case SIX_10: _six_10;
+			case SIX_11: _six_11;
+			case SIX_12: _six_12;
+			case SIX_13: _six_13;
+			case SIX_14: _six_14;
+			case SIX_15: _six_15;
+			case SIX_16: _six_16;
+			case SIX_17: _six_17;
+			case SIX_18: _six_18;
+			case SIX_19: _six_19;
+			case SIX_20: _six_20;
+			case SIX_21: _six_21;
+			case SIX_22: _six_22;
+			case SIX_23: _six_23;
+			case SIX_24: _six_24;
+			case SIX_25: _six_25;
+			case SIX_26: _six_26;
+			case SIX_27: _six_27;
+			case SIX_28: _six_28;
+			case SIX_29: _six_29;
+			case SIX_30: _six_30;
+			case SIX_31: _six_31;
+			case SIX_32: _six_32;
+			case SIX_33: _six_33;
+			case SIX_34: _six_34;
+			case SIX_35: _six_35;
+			case SIX_36: _six_36;
+			case SIX_37: _six_37;
+			case SIX_38: _six_38;
+			case SIX_39: _six_39;
+			case SIX_40: _six_40;
+			case SIX_41: _six_41;
+			case SIX_42: _six_42;
+			case SIX_43: _six_43;
+			case SIX_44: _six_44;
+			case SIX_45: _six_45;
+			case SIX_46: _six_46;
+			case SIX_47: _six_47;
+			case SIX_48: _six_48;
+			case SIX_49: _six_49;
+			case SIX_50: _six_50;
+			case SIX_51: _six_51;
+			case SIX_52: _six_52;
+			case SIX_53: _six_53;
+			case SIX_54: _six_54;
+			case SIX_55: _six_55;
+			case SIX_56: _six_56;
+			case SIX_57: _six_57;
+			case SIX_58: _six_58;
+			case SIX_59: _six_59;
+			case SIX_60: _six_60;
+			case SIX_61: _six_61;
+			case SIX_62: _six_62;
+			case SIX_63: _six_63;
+			case SIX_64: _six_64;
+			case SIX_65: _six_65;
+			case SIX_66: _six_66;
+			case SIX_67: _six_67;
+			case SIX_68: _six_68;
+			case SIX_69: _six_69;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			case UI_UP: _ui_up;
 			case UI_DOWN: _ui_down;
 			case UI_LEFT: _ui_left;
@@ -1310,6 +3353,373 @@ class Controls extends FlxActionSet
 	{
 		switch (control)
 		{
+			case SIX_1:
+				func(_six_1, PRESSED);
+				func(_six_1P, JUST_PRESSED);
+				func(_six_1R, JUST_RELEASED);
+				
+			case SIX_2:
+				func(_six_2, PRESSED);
+				func(_six_2P, JUST_PRESSED);
+				func(_six_2R, JUST_RELEASED);
+				
+			case SIX_3:
+				func(_six_3, PRESSED);
+				func(_six_3P, JUST_PRESSED);
+				func(_six_3R, JUST_RELEASED);
+				
+			case SIX_4:
+				func(_six_4, PRESSED);
+				func(_six_4P, JUST_PRESSED);
+				func(_six_4R, JUST_RELEASED);
+				
+			case SIX_5:
+				func(_six_5, PRESSED);
+				func(_six_5P, JUST_PRESSED);
+				func(_six_5R, JUST_RELEASED);
+				
+			case SIX_6:
+				func(_six_6, PRESSED);
+				func(_six_6P, JUST_PRESSED);
+				func(_six_6R, JUST_RELEASED);
+				
+			case SIX_7:
+				func(_six_7, PRESSED);
+				func(_six_7P, JUST_PRESSED);
+				func(_six_7R, JUST_RELEASED);
+				
+			case SIX_8:
+				func(_six_8, PRESSED);
+				func(_six_8P, JUST_PRESSED);
+				func(_six_8R, JUST_RELEASED);
+				
+			case SIX_9:
+				func(_six_9, PRESSED);
+				func(_six_9P, JUST_PRESSED);
+				func(_six_9R, JUST_RELEASED);
+				
+			case SIX_10:
+				func(_six_10, PRESSED);
+				func(_six_10P, JUST_PRESSED);
+				func(_six_10R, JUST_RELEASED);
+				
+			case SIX_11:
+				func(_six_11, PRESSED);
+				func(_six_11P, JUST_PRESSED);
+				func(_six_11R, JUST_RELEASED);
+				
+			case SIX_12:
+				func(_six_12, PRESSED);
+				func(_six_12P, JUST_PRESSED);
+				func(_six_12R, JUST_RELEASED);
+				
+			case SIX_13:
+				func(_six_13, PRESSED);
+				func(_six_13P, JUST_PRESSED);
+				func(_six_13R, JUST_RELEASED);
+				
+			case SIX_14:
+				func(_six_14, PRESSED);
+				func(_six_14P, JUST_PRESSED);
+				func(_six_14R, JUST_RELEASED);
+				
+			case SIX_15:
+				func(_six_15, PRESSED);
+				func(_six_15P, JUST_PRESSED);
+				func(_six_15R, JUST_RELEASED);
+				
+			case SIX_16:
+				func(_six_16, PRESSED);
+				func(_six_16P, JUST_PRESSED);
+				func(_six_16R, JUST_RELEASED);
+				
+			case SIX_17:
+				func(_six_17, PRESSED);
+				func(_six_17P, JUST_PRESSED);
+				func(_six_17R, JUST_RELEASED);
+				
+			case SIX_18:
+				func(_six_18, PRESSED);
+				func(_six_18P, JUST_PRESSED);
+				func(_six_18R, JUST_RELEASED);
+				
+			case SIX_19:
+				func(_six_19, PRESSED);
+				func(_six_19P, JUST_PRESSED);
+				func(_six_19R, JUST_RELEASED);
+				
+			case SIX_20:
+				func(_six_20, PRESSED);
+				func(_six_20P, JUST_PRESSED);
+				func(_six_20R, JUST_RELEASED);
+				
+			case SIX_21:
+				func(_six_21, PRESSED);
+				func(_six_21P, JUST_PRESSED);
+				func(_six_21R, JUST_RELEASED);
+				
+			case SIX_22:
+				func(_six_22, PRESSED);
+				func(_six_22P, JUST_PRESSED);
+				func(_six_22R, JUST_RELEASED);
+				
+			case SIX_23:
+				func(_six_23, PRESSED);
+				func(_six_23P, JUST_PRESSED);
+				func(_six_23R, JUST_RELEASED);
+				
+			case SIX_24:
+				func(_six_24, PRESSED);
+				func(_six_24P, JUST_PRESSED);
+				func(_six_24R, JUST_RELEASED);
+				
+			case SIX_25:
+				func(_six_25, PRESSED);
+				func(_six_25P, JUST_PRESSED);
+				func(_six_25R, JUST_RELEASED);
+				
+			case SIX_26:
+				func(_six_26, PRESSED);
+				func(_six_26P, JUST_PRESSED);
+				func(_six_26R, JUST_RELEASED);
+				
+			case SIX_27:
+				func(_six_27, PRESSED);
+				func(_six_27P, JUST_PRESSED);
+				func(_six_27R, JUST_RELEASED);
+				
+			case SIX_28:
+				func(_six_28, PRESSED);
+				func(_six_28P, JUST_PRESSED);
+				func(_six_28R, JUST_RELEASED);
+				
+			case SIX_29:
+				func(_six_29, PRESSED);
+				func(_six_29P, JUST_PRESSED);
+				func(_six_29R, JUST_RELEASED);
+				
+			case SIX_30:
+				func(_six_30, PRESSED);
+				func(_six_30P, JUST_PRESSED);
+				func(_six_30R, JUST_RELEASED);
+				
+			case SIX_31:
+				func(_six_31, PRESSED);
+				func(_six_31P, JUST_PRESSED);
+				func(_six_31R, JUST_RELEASED);
+				
+			case SIX_32:
+				func(_six_32, PRESSED);
+				func(_six_32P, JUST_PRESSED);
+				func(_six_32R, JUST_RELEASED);
+				
+			case SIX_33:
+				func(_six_33, PRESSED);
+				func(_six_33P, JUST_PRESSED);
+				func(_six_33R, JUST_RELEASED);
+				
+			case SIX_34:
+				func(_six_34, PRESSED);
+				func(_six_34P, JUST_PRESSED);
+				func(_six_34R, JUST_RELEASED);
+				
+			case SIX_35:
+				func(_six_35, PRESSED);
+				func(_six_35P, JUST_PRESSED);
+				func(_six_35R, JUST_RELEASED);
+				
+			case SIX_36:
+				func(_six_36, PRESSED);
+				func(_six_36P, JUST_PRESSED);
+				func(_six_36R, JUST_RELEASED);
+				
+			case SIX_37:
+				func(_six_37, PRESSED);
+				func(_six_37P, JUST_PRESSED);
+				func(_six_37R, JUST_RELEASED);
+				
+			case SIX_38:
+				func(_six_38, PRESSED);
+				func(_six_38P, JUST_PRESSED);
+				func(_six_38R, JUST_RELEASED);
+				
+			case SIX_39:
+				func(_six_39, PRESSED);
+				func(_six_39P, JUST_PRESSED);
+				func(_six_39R, JUST_RELEASED);
+				
+			case SIX_40:
+				func(_six_40, PRESSED);
+				func(_six_40P, JUST_PRESSED);
+				func(_six_40R, JUST_RELEASED);
+				
+			case SIX_41:
+				func(_six_41, PRESSED);
+				func(_six_41P, JUST_PRESSED);
+				func(_six_41R, JUST_RELEASED);
+				
+			case SIX_42:
+				func(_six_42, PRESSED);
+				func(_six_42P, JUST_PRESSED);
+				func(_six_42R, JUST_RELEASED);
+				
+			case SIX_43:
+				func(_six_43, PRESSED);
+				func(_six_43P, JUST_PRESSED);
+				func(_six_43R, JUST_RELEASED);
+				
+			case SIX_44:
+				func(_six_44, PRESSED);
+				func(_six_44P, JUST_PRESSED);
+				func(_six_44R, JUST_RELEASED);
+				
+			case SIX_45:
+				func(_six_45, PRESSED);
+				func(_six_45P, JUST_PRESSED);
+				func(_six_45R, JUST_RELEASED);
+				
+			case SIX_46:
+				func(_six_46, PRESSED);
+				func(_six_46P, JUST_PRESSED);
+				func(_six_46R, JUST_RELEASED);
+				
+			case SIX_47:
+				func(_six_47, PRESSED);
+				func(_six_47P, JUST_PRESSED);
+				func(_six_47R, JUST_RELEASED);
+				
+			case SIX_48:
+				func(_six_48, PRESSED);
+				func(_six_48P, JUST_PRESSED);
+				func(_six_48R, JUST_RELEASED);
+				
+			case SIX_49:
+				func(_six_49, PRESSED);
+				func(_six_49P, JUST_PRESSED);
+				func(_six_49R, JUST_RELEASED);
+				
+			case SIX_50:
+				func(_six_50, PRESSED);
+				func(_six_50P, JUST_PRESSED);
+				func(_six_50R, JUST_RELEASED);
+				
+			case SIX_51:
+				func(_six_51, PRESSED);
+				func(_six_51P, JUST_PRESSED);
+				func(_six_51R, JUST_RELEASED);
+				
+			case SIX_52:
+				func(_six_52, PRESSED);
+				func(_six_52P, JUST_PRESSED);
+				func(_six_52R, JUST_RELEASED);
+				
+			case SIX_53:
+				func(_six_53, PRESSED);
+				func(_six_53P, JUST_PRESSED);
+				func(_six_53R, JUST_RELEASED);
+				
+			case SIX_54:
+				func(_six_54, PRESSED);
+				func(_six_54P, JUST_PRESSED);
+				func(_six_54R, JUST_RELEASED);
+				
+			case SIX_55:
+				func(_six_55, PRESSED);
+				func(_six_55P, JUST_PRESSED);
+				func(_six_55R, JUST_RELEASED);
+				
+			case SIX_56:
+				func(_six_56, PRESSED);
+				func(_six_56P, JUST_PRESSED);
+				func(_six_56R, JUST_RELEASED);
+				
+			case SIX_57:
+				func(_six_57, PRESSED);
+				func(_six_57P, JUST_PRESSED);
+				func(_six_57R, JUST_RELEASED);
+				
+			case SIX_58:
+				func(_six_58, PRESSED);
+				func(_six_58P, JUST_PRESSED);
+				func(_six_58R, JUST_RELEASED);
+				
+			case SIX_59:
+				func(_six_59, PRESSED);
+				func(_six_59P, JUST_PRESSED);
+				func(_six_59R, JUST_RELEASED);
+				
+			case SIX_60:
+				func(_six_60, PRESSED);
+				func(_six_60P, JUST_PRESSED);
+				func(_six_60R, JUST_RELEASED);
+				
+			case SIX_61:
+				func(_six_61, PRESSED);
+				func(_six_61P, JUST_PRESSED);
+				func(_six_61R, JUST_RELEASED);
+				
+			case SIX_62:
+				func(_six_62, PRESSED);
+				func(_six_62P, JUST_PRESSED);
+				func(_six_62R, JUST_RELEASED);
+				
+			case SIX_63:
+				func(_six_63, PRESSED);
+				func(_six_63P, JUST_PRESSED);
+				func(_six_63R, JUST_RELEASED);
+				
+			case SIX_64:
+				func(_six_64, PRESSED);
+				func(_six_64P, JUST_PRESSED);
+				func(_six_64R, JUST_RELEASED);
+				
+			case SIX_65:
+				func(_six_65P, PRESSED);
+				func(_six_65P, JUST_PRESSED);
+				func(_six_65R, JUST_RELEASED);
+				
+			case SIX_66:
+				func(_six_66, PRESSED);
+				func(_six_66P, JUST_PRESSED);
+				func(_six_66R, JUST_RELEASED);
+				
+			case SIX_67:
+				func(_six_67, PRESSED);
+				func(_six_67P, JUST_PRESSED);
+				func(_six_67R, JUST_RELEASED);
+				
+			case SIX_68:
+				func(_six_68, PRESSED);
+				func(_six_68P, JUST_PRESSED);
+				func(_six_68R, JUST_RELEASED);
+
+			case SIX_69:
+				func(_six_69, PRESSED);
+				func(_six_69P, JUST_PRESSED);
+				func(_six_69R, JUST_RELEASED);
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			case UI_UP:
 				func(_ui_up, PRESSED);
 				func(_ui_upP, JUST_PRESSED);
@@ -1627,6 +4037,81 @@ class Controls extends FlxActionSet
 				bindKeys(Control.ACCEPT, [Z, SPACE, ENTER]);
 				bindKeys(Control.BACK, [BACKSPACE, ESCAPE]);
 				bindKeys(Control.PAUSE, [P, ENTER, ESCAPE]);
+
+
+
+				bindKeys(Control.SIX_1, [ONE, ONE]);
+				bindKeys(Control.SIX_2, [TWO, TWO]);
+				bindKeys(Control.SIX_3, [THREE, THREE]);
+				bindKeys(Control.SIX_4, [FOUR, FOUR]);
+				bindKeys(Control.SIX_5, [FIVE, FIVE]);
+				bindKeys(Control.SIX_6, [SIX, SIX]);
+				bindKeys(Control.SIX_7, [SEVEN, SEVEN]);
+				bindKeys(Control.SIX_8, [EIGHT, EIGHT]);
+				bindKeys(Control.SIX_9, [NINE, NINE]);
+				bindKeys(Control.SIX_10, [ZERO, ZERO]);
+				bindKeys(Control.SIX_11, [TAB, TAB]);
+				bindKeys(Control.SIX_12, [Q, Q]);
+				bindKeys(Control.SIX_13, [W, W]);
+				bindKeys(Control.SIX_14, [E, E]);
+				bindKeys(Control.SIX_15, [R, R]);
+				bindKeys(Control.SIX_16, [T, T]);
+				bindKeys(Control.SIX_17, [Y, Y]);
+				bindKeys(Control.SIX_18, [U, U]);
+				bindKeys(Control.SIX_19, [I, I]);
+				bindKeys(Control.SIX_20, [O, O]);
+				bindKeys(Control.SIX_21, [P, P]);
+				bindKeys(Control.SIX_22, [LBRACKET, LBRACKET]);
+				bindKeys(Control.SIX_23, [RBRACKET, RBRACKET]);
+				bindKeys(Control.SIX_24, [BACKSLASH, BACKSLASH]);
+				bindKeys(Control.SIX_25, [A, A]);
+				bindKeys(Control.SIX_26, [S, S]);
+				bindKeys(Control.SIX_27, [D, D]);
+				bindKeys(Control.SIX_28, [F, F]);
+				bindKeys(Control.SIX_29, [G, G]);
+				bindKeys(Control.SIX_30, [H, H]);
+				bindKeys(Control.SIX_31, [J, J]);
+				bindKeys(Control.SIX_32, [K, K]);
+				bindKeys(Control.SIX_33, [L, L]);
+				bindKeys(Control.SIX_34, [SEMICOLON, SEMICOLON]);
+				bindKeys(Control.SIX_35, [QUOTE, QUOTE]);
+				bindKeys(Control.SIX_36, [Z, Z]);
+				bindKeys(Control.SIX_37, [X, X]);
+				bindKeys(Control.SIX_38, [C, C]);
+				bindKeys(Control.SIX_39, [V, V]);
+				bindKeys(Control.SIX_40, [B, B]);
+				bindKeys(Control.SIX_41, [N, N]);
+				bindKeys(Control.SIX_42, [M, M]);
+				bindKeys(Control.SIX_43, [COMMA, COMMA]);
+				bindKeys(Control.SIX_44, [PERIOD, PERIOD]);
+				bindKeys(Control.SIX_45, [SLASH, SLASH]);
+				bindKeys(Control.SIX_46, [NUMPADZERO, NUMPADZERO]);
+				bindKeys(Control.SIX_47, [NUMPADONE, NUMPADONE]);
+				bindKeys(Control.SIX_48, [NUMPADTWO, NUMPADTWO]);
+				bindKeys(Control.SIX_49, [NUMPADTHREE, NUMPADTHREE]);
+				bindKeys(Control.SIX_50, [NUMPADFOUR, NUMPADFOUR]);
+				bindKeys(Control.SIX_51, [NUMPADFIVE, NUMPADSIX]);
+				bindKeys(Control.SIX_52, [NUMPADSIX, NUMPADSIX]);
+				bindKeys(Control.SIX_53, [NUMPADSEVEN, NUMPADSEVEN]);
+				bindKeys(Control.SIX_54, [NUMPADEIGHT, NUMPADEIGHT]);
+				bindKeys(Control.SIX_55, [NUMPADNINE, NUMPADNINE]);
+				bindKeys(Control.SIX_56, [LEFT, LEFT]);
+				bindKeys(Control.SIX_57, [DOWN, DOWN]);
+				bindKeys(Control.SIX_58, [UP, UP]);
+				bindKeys(Control.SIX_59, [RIGHT, RIGHT]);
+				bindKeys(Control.SIX_60, [F1, F1]);
+				bindKeys(Control.SIX_61, [F2, F2]);
+				bindKeys(Control.SIX_62, [F3, F3]);
+				bindKeys(Control.SIX_63, [F4, F4]);
+				bindKeys(Control.SIX_64, [F5, F5]);
+				bindKeys(Control.SIX_65, [F6, F6]);
+				bindKeys(Control.SIX_66, [F7, F7]);
+				bindKeys(Control.SIX_67, [F8, F8]);
+				bindKeys(Control.SIX_68, [F9, F9]);
+				bindKeys(Control.SIX_69, [F10, F10]);
+				
+
+
 				//bindKeys(Control.RESET, [R]);
 			case Duo(true):
 				bindKeys(Control.UI_UP, [W]);
@@ -1640,6 +4125,77 @@ class Controls extends FlxActionSet
 				bindKeys(Control.ACCEPT, [G, Z]);
 				bindKeys(Control.BACK, [H, X]);
 				bindKeys(Control.PAUSE, [ONE]);
+
+
+				bindKeys(Control.SIX_1, [ONE, ONE]);
+				bindKeys(Control.SIX_2, [TWO, TWO]);
+				bindKeys(Control.SIX_3, [THREE, THREE]);
+				bindKeys(Control.SIX_4, [FOUR, FOUR]);
+				bindKeys(Control.SIX_5, [FIVE, FIVE]);
+				bindKeys(Control.SIX_6, [SIX, SIX]);
+				bindKeys(Control.SIX_7, [SEVEN, SEVEN]);
+				bindKeys(Control.SIX_8, [EIGHT, EIGHT]);
+				bindKeys(Control.SIX_9, [NINE, NINE]);
+				bindKeys(Control.SIX_10, [ZERO, ZERO]);
+				bindKeys(Control.SIX_11, [TAB, TAB]);
+				bindKeys(Control.SIX_12, [Q, Q]);
+				bindKeys(Control.SIX_13, [W, W]);
+				bindKeys(Control.SIX_14, [E, E]);
+				bindKeys(Control.SIX_15, [R, R]);
+				bindKeys(Control.SIX_16, [T, T]);
+				bindKeys(Control.SIX_17, [Y, Y]);
+				bindKeys(Control.SIX_18, [U, U]);
+				bindKeys(Control.SIX_19, [I, I]);
+				bindKeys(Control.SIX_20, [O, O]);
+				bindKeys(Control.SIX_21, [P, P]);
+				bindKeys(Control.SIX_22, [LBRACKET, LBRACKET]);
+				bindKeys(Control.SIX_23, [RBRACKET, RBRACKET]);
+				bindKeys(Control.SIX_24, [BACKSLASH, BACKSLASH]);
+				bindKeys(Control.SIX_25, [A, A]);
+				bindKeys(Control.SIX_26, [S, S]);
+				bindKeys(Control.SIX_27, [D, D]);
+				bindKeys(Control.SIX_28, [F, F]);
+				bindKeys(Control.SIX_29, [G, G]);
+				bindKeys(Control.SIX_30, [H, H]);
+				bindKeys(Control.SIX_31, [J, J]);
+				bindKeys(Control.SIX_32, [K, K]);
+				bindKeys(Control.SIX_33, [L, L]);
+				bindKeys(Control.SIX_34, [SEMICOLON, SEMICOLON]);
+				bindKeys(Control.SIX_35, [QUOTE, QUOTE]);
+				bindKeys(Control.SIX_36, [Z, Z]);
+				bindKeys(Control.SIX_37, [X, X]);
+				bindKeys(Control.SIX_38, [C, C]);
+				bindKeys(Control.SIX_39, [V, V]);
+				bindKeys(Control.SIX_40, [B, B]);
+				bindKeys(Control.SIX_41, [N, N]);
+				bindKeys(Control.SIX_42, [M, M]);
+				bindKeys(Control.SIX_43, [COMMA, COMMA]);
+				bindKeys(Control.SIX_44, [PERIOD, PERIOD]);
+				bindKeys(Control.SIX_45, [SLASH, SLASH]);
+				bindKeys(Control.SIX_46, [NUMPADZERO, NUMPADZERO]);
+				bindKeys(Control.SIX_47, [NUMPADONE, NUMPADONE]);
+				bindKeys(Control.SIX_48, [NUMPADTWO, NUMPADTWO]);
+				bindKeys(Control.SIX_49, [NUMPADTHREE, NUMPADTHREE]);
+				bindKeys(Control.SIX_50, [NUMPADFOUR, NUMPADFOUR]);
+				bindKeys(Control.SIX_51, [NUMPADFIVE, NUMPADSIX]);
+				bindKeys(Control.SIX_52, [NUMPADSIX, NUMPADSIX]);
+				bindKeys(Control.SIX_53, [NUMPADSEVEN, NUMPADSEVEN]);
+				bindKeys(Control.SIX_54, [NUMPADEIGHT, NUMPADEIGHT]);
+				bindKeys(Control.SIX_55, [NUMPADNINE, NUMPADNINE]);
+				bindKeys(Control.SIX_56, [LEFT, LEFT]);
+				bindKeys(Control.SIX_57, [DOWN, DOWN]);
+				bindKeys(Control.SIX_58, [UP, UP]);
+				bindKeys(Control.SIX_59, [RIGHT, RIGHT]);
+				bindKeys(Control.SIX_60, [F1, F1]);
+				bindKeys(Control.SIX_61, [F2, F2]);
+				bindKeys(Control.SIX_62, [F3, F3]);
+				bindKeys(Control.SIX_63, [F4, F4]);
+				bindKeys(Control.SIX_64, [F5, F5]);
+				bindKeys(Control.SIX_65, [F6, F6]);
+				bindKeys(Control.SIX_66, [F7, F7]);
+				bindKeys(Control.SIX_67, [F8, F8]);
+				bindKeys(Control.SIX_68, [F9, F9]);
+				bindKeys(Control.SIX_69, [F10, F10]);
 				//bindKeys(Control.RESET, [R]);
 			case Duo(false):
 				bindKeys(Control.UI_UP, [FlxKey.UP]);
@@ -1653,6 +4209,76 @@ class Controls extends FlxActionSet
 				bindKeys(Control.ACCEPT, [O]);
 				bindKeys(Control.BACK, [P]);
 				bindKeys(Control.PAUSE, [ENTER]);
+
+				bindKeys(Control.SIX_1, [ONE, ONE]);
+				bindKeys(Control.SIX_2, [TWO, TWO]);
+				bindKeys(Control.SIX_3, [THREE, THREE]);
+				bindKeys(Control.SIX_4, [FOUR, FOUR]);
+				bindKeys(Control.SIX_5, [FIVE, FIVE]);
+				bindKeys(Control.SIX_6, [SIX, SIX]);
+				bindKeys(Control.SIX_7, [SEVEN, SEVEN]);
+				bindKeys(Control.SIX_8, [EIGHT, EIGHT]);
+				bindKeys(Control.SIX_9, [NINE, NINE]);
+				bindKeys(Control.SIX_10, [ZERO, ZERO]);
+				bindKeys(Control.SIX_11, [TAB, TAB]);
+				bindKeys(Control.SIX_12, [Q, Q]);
+				bindKeys(Control.SIX_13, [W, W]);
+				bindKeys(Control.SIX_14, [E, E]);
+				bindKeys(Control.SIX_15, [R, R]);
+				bindKeys(Control.SIX_16, [T, T]);
+				bindKeys(Control.SIX_17, [Y, Y]);
+				bindKeys(Control.SIX_18, [U, U]);
+				bindKeys(Control.SIX_19, [I, I]);
+				bindKeys(Control.SIX_20, [O, O]);
+				bindKeys(Control.SIX_21, [P, P]);
+				bindKeys(Control.SIX_22, [LBRACKET, LBRACKET]);
+				bindKeys(Control.SIX_23, [RBRACKET, RBRACKET]);
+				bindKeys(Control.SIX_24, [BACKSLASH, BACKSLASH]);
+				bindKeys(Control.SIX_25, [A, A]);
+				bindKeys(Control.SIX_26, [S, S]);
+				bindKeys(Control.SIX_27, [D, D]);
+				bindKeys(Control.SIX_28, [F, F]);
+				bindKeys(Control.SIX_29, [G, G]);
+				bindKeys(Control.SIX_30, [H, H]);
+				bindKeys(Control.SIX_31, [J, J]);
+				bindKeys(Control.SIX_32, [K, K]);
+				bindKeys(Control.SIX_33, [L, L]);
+				bindKeys(Control.SIX_34, [SEMICOLON, SEMICOLON]);
+				bindKeys(Control.SIX_35, [QUOTE, QUOTE]);
+				bindKeys(Control.SIX_36, [Z, Z]);
+				bindKeys(Control.SIX_37, [X, X]);
+				bindKeys(Control.SIX_38, [C, C]);
+				bindKeys(Control.SIX_39, [V, V]);
+				bindKeys(Control.SIX_40, [B, B]);
+				bindKeys(Control.SIX_41, [N, N]);
+				bindKeys(Control.SIX_42, [M, M]);
+				bindKeys(Control.SIX_43, [COMMA, COMMA]);
+				bindKeys(Control.SIX_44, [PERIOD, PERIOD]);
+				bindKeys(Control.SIX_45, [SLASH, SLASH]);
+				bindKeys(Control.SIX_46, [NUMPADZERO, NUMPADZERO]);
+				bindKeys(Control.SIX_47, [NUMPADONE, NUMPADONE]);
+				bindKeys(Control.SIX_48, [NUMPADTWO, NUMPADTWO]);
+				bindKeys(Control.SIX_49, [NUMPADTHREE, NUMPADTHREE]);
+				bindKeys(Control.SIX_50, [NUMPADFOUR, NUMPADFOUR]);
+				bindKeys(Control.SIX_51, [NUMPADFIVE, NUMPADSIX]);
+				bindKeys(Control.SIX_52, [NUMPADSIX, NUMPADSIX]);
+				bindKeys(Control.SIX_53, [NUMPADSEVEN, NUMPADSEVEN]);
+				bindKeys(Control.SIX_54, [NUMPADEIGHT, NUMPADEIGHT]);
+				bindKeys(Control.SIX_55, [NUMPADNINE, NUMPADNINE]);
+				bindKeys(Control.SIX_56, [LEFT, LEFT]);
+				bindKeys(Control.SIX_57, [DOWN, DOWN]);
+				bindKeys(Control.SIX_58, [UP, UP]);
+				bindKeys(Control.SIX_59, [RIGHT, RIGHT]);
+				bindKeys(Control.SIX_60, [F1, F1]);
+				bindKeys(Control.SIX_61, [F2, F2]);
+				bindKeys(Control.SIX_62, [F3, F3]);
+				bindKeys(Control.SIX_63, [F4, F4]);
+				bindKeys(Control.SIX_64, [F5, F5]);
+				bindKeys(Control.SIX_65, [F6, F6]);
+				bindKeys(Control.SIX_66, [F7, F7]);
+				bindKeys(Control.SIX_67, [F8, F8]);
+				bindKeys(Control.SIX_68, [F9, F9]);
+				bindKeys(Control.SIX_69, [F10, F10]);
 				//bindKeys(Control.RESET, [BACKSPACE]);
 			case None: // nothing
 			case Custom: // nothing

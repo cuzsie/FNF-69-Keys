@@ -4,4 +4,4 @@ bf:burn:-1:beep bop bap, skdee bop!
 wbsh:normal:1:Damn, for real?
 wbsh:normal:1:You've got balls coming into my domain#and throwing around big words like that.
 wbsh:smug:1:Hope you're ready to get your ass#handed to you, blue.
-wbsh:laugh:1:I'll make you eat those words,#prepare to be crushed by my singing!
+wbsh:laugh:1:You are not ready for this...

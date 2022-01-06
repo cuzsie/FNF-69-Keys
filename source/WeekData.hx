@@ -5,23 +5,11 @@ class WeekData {
 	//Go to FreeplayState.hx and add the head icons
 	//Go to StoryMenuState.hx and add the characters/backgrounds
 	public static var songsNames:Array<Dynamic> = [
-		['Where-are-you', 'Eruption', 'Kaio-ken'],
-		['Whats-new', 'Blast', 'Super-saiyan'],
-		['GOD-EATER'],
-		['Press to download!'],
-		['Soothing-power', 'Thunderstorm', 'Dissasembler'],
-		['Astral-calamity'],
-		['']
+		['Astral-calamity']
 	];
 
 	public static var maniaSongs:Array<Dynamic> = [
-		['Kaio-ken'],
-		['Blast', 'Super-saiyan'],
-		['GOD-EATER'],
-		['Press to download!'],
-		['Thunderstorm', 'Dissasembler'],
-		[''],
-		[' ']
+		['']
 	];
 
 	public static var songHasMania:Map<String, Bool> = [

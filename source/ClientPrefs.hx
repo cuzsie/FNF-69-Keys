@@ -153,7 +153,7 @@ class ClientPrefs {
 		[Control.A1, 'Left 1'],
 		[Control.A2, 'Up  '],
 		[Control.A3, 'Right 1'],
-		[Control.A4, 'Center'],
+		[Control.A4, 'Center'], 
 		[Control.A5, 'Left 2'],
 		[Control.A6, 'Down  '],
 		[Control.A7, 'Right 2'],
@@ -166,7 +166,81 @@ class ClientPrefs {
 		[Control.B6, 'Left 2 '],
 		[Control.B7, 'Down 2'],
 		[Control.B8, 'Up 2'],
-		[Control.B9, 'Right 2 ']
+		[Control.B9, 'Right 2 '],
+
+
+
+
+		// your gonna have a FUN time!
+		[Control.SIX_1, '69 Key 1 '],
+		[Control.SIX_2, '69 Key 2 '],
+		[Control.SIX_3, '69 Key 3 '],
+		[Control.SIX_4, '69 Key 4 '],
+		[Control.SIX_5, '69 Key 5 '],
+		[Control.SIX_6, '69 Key 6 '],
+		[Control.SIX_7, '69 Key 7 '],
+		[Control.SIX_8, '69 Key 8 '],
+		[Control.SIX_9, '69 Key 9 '],
+		[Control.SIX_10, '69 Key 10 '],
+		[Control.SIX_11, '69 Key 11 '],
+		[Control.SIX_12, '69 Key 12 '],
+		[Control.SIX_13, '69 Key 13 '],
+		[Control.SIX_14, '69 Key 14 '],
+		[Control.SIX_15, '69 Key 15 '],
+		[Control.SIX_16, '69 Key 16 '],
+		[Control.SIX_17, '69 Key 17 '],
+		[Control.SIX_18, '69 Key 18 '],
+		[Control.SIX_19, '69 Key 19 '],
+		[Control.SIX_20, '69 Key 20 '],
+		[Control.SIX_21, '69 Key 21 '],
+		[Control.SIX_22, '69 Key 22 '],
+		[Control.SIX_23, '69 Key 23 '],
+		[Control.SIX_24, '69 Key 24 '],
+		[Control.SIX_25, '69 Key 25 '],
+		[Control.SIX_26, '69 Key 26 '],
+		[Control.SIX_27, '69 Key 27 '],
+		[Control.SIX_28, '69 Key 28 '],
+		[Control.SIX_29, '69 Key 29 '],
+		[Control.SIX_30, '69 Key 30 '],
+		[Control.SIX_31, '69 Key 31 '],
+		[Control.SIX_32, '69 Key 32 '],
+		[Control.SIX_33, '69 Key 33 '],
+		[Control.SIX_34, '69 Key 34 '],
+		[Control.SIX_35, '69 Key 35 '],
+		[Control.SIX_36, '69 Key 36 '],
+		[Control.SIX_37, '69 Key 37 '],
+		[Control.SIX_38, '69 Key 38 '],
+		[Control.SIX_39, '69 Key 39 '],
+		[Control.SIX_40, '69 Key 40 '],
+		[Control.SIX_41, '69 Key 41 '],
+		[Control.SIX_42, '69 Key 42 '],
+		[Control.SIX_43, '69 Key 43 '],
+		[Control.SIX_44, '69 Key 44 '],
+		[Control.SIX_45, '69 Key 45 '],
+		[Control.SIX_46, '69 Key 46 '],
+		[Control.SIX_47, '69 Key 47 '],
+		[Control.SIX_48, '69 Key 48 '],
+		[Control.SIX_49, '69 Key 49 '],
+		[Control.SIX_50, '69 Key 50 '],
+		[Control.SIX_51, '69 Key 51 '],
+		[Control.SIX_52, '69 Key 52 '],
+		[Control.SIX_53, '69 Key 53 '],
+		[Control.SIX_54, '69 Key 54 '],
+		[Control.SIX_55, '69 Key 55 '],
+		[Control.SIX_56, '69 Key 56 '],
+		[Control.SIX_57, '69 Key 57 '],
+		[Control.SIX_58, '69 Key 58 '],
+		[Control.SIX_59, '69 Key 59 '],
+		[Control.SIX_60, '69 Key 60 '],
+		[Control.SIX_61, '69 Key 61 '],
+		[Control.SIX_62, '69 Key 62 '],
+		[Control.SIX_63, '69 Key 63 '],
+		[Control.SIX_64, '69 Key 64 '],
+		[Control.SIX_65, '69 Key 65 '],
+		[Control.SIX_66, '69 Key 66 '],
+		[Control.SIX_67, '69 Key 67 '],
+		[Control.SIX_68, '69 Key 68 '],
+		[Control.SIX_69, '69 Key 69 ']
 	];
 	public static var lastControls:Array<FlxKey> = defaultKeys.copy();
 
@@ -241,12 +315,6 @@ class ClientPrefs {
 				FlxG.updateFramerate = framerate;
 			}
 		}
-		/*if(FlxG.save.data.cursing != null) {
-			cursing = FlxG.save.data.cursing;
-		}
-		if(FlxG.save.data.violence != null) {
-			violence = FlxG.save.data.violence;
-		}*/
 		if(FlxG.save.data.camZooms != null) {
 			camZooms = FlxG.save.data.camZooms;
 		}
@@ -314,11 +382,18 @@ class ClientPrefs {
 		}
 	}
 	private static function loadControls(controlArray:Array<FlxKey>) {
-		for (i in 0...keyBinds.length) {
+		for (i in 0...keyBinds.length) 
+		{
 			var controlValue:Int = i*2;
 			var controlsToAdd:Array<FlxKey> = [];
+
+			if (keyBinds[i] == null)
+			{
+				controlsToAdd.push(defaultKeys[i]);
+			}
 			for (j in 0...2) {
-				if(controlArray[controlValue+j] != NONE) {
+				if(controlArray[controlValue+j] != NONE) 
+				{
 					controlsToAdd.push(controlArray[controlValue+j]);
 				}
 			}

@@ -39,35 +39,17 @@ class StoryMenuState extends MusicBeatState
 	//It works like this:
 	// ['Left character', 'Center character', 'Right character']
 	var weekCharacters:Array<Dynamic> = [
-		['shaggy', 'bf', 'gf'],
-		['shaggy', 'bf', 'gf'],
-		['pshaggy', 'bf', 'gf'],
-		['shaggymatt', 'bf', 'gf'],
-		['rshaggy', 'bf', 'gf'],
-		['wbshaggy', 'bf', 'gf'],
-		['', 'bf', 'gf']
+		['rshaggy', 'bf', 'gf']
 	];
 
 	//The week's name, displayed on top-right
 	var weekNames:Array<String> = [
-		"First encounter",
-		"The rematch",
-		"Ultimate destruction",
-		"Cruel revelation",
-		"Bonus match",
-		"Special Kombat with the third of his kind",
-		"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+		"Haha funny number lmfao"
 	];
 
 	//Background asset name, the background files are stored on assets/preload/menubackgrounds/
 	var weekBackground:Array<String> = [
-		'halloween',		
-		'halloween',
-		'sky',
-		'boxin',
-		'outside',
-		'lava',
-		'blank'
+		'lava'
 	];
 	
 	var scoreText:FlxText;

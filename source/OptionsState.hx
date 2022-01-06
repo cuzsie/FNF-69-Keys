@@ -568,7 +568,7 @@ class ControlsSubstate extends MusicBeatSubstate
 		ClientPrefs.keyBinds[96][1],
 
 		'',
-		defaultKey];
+		defaultKey]; 
 
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private var grpInputs:Array<AttachedText> = [];

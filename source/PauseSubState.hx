@@ -19,7 +19,7 @@ class PauseSubState extends MusicBeatSubstate
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
 	var menuItems:Array<String> = [];
-	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty', 'Toggle Practice Mode', 'Botplay', 'Exit to menu'];
+	var menuItemsOG:Array<String> = ['Resume', 'Edit', 'Restart Song', 'Change Difficulty', 'Toggle Practice Mode', 'Botplay', 'Exit to menu'];
 	var difficultyChoices = ['MANIA', 'EASY', 'CANON', 'BACK'];
 	var curSelected:Int = 0;
 
@@ -212,6 +212,8 @@ class PauseSubState extends MusicBeatSubstate
 					trace('COCKCKCKC');
 					if (PlayState.SONG.song == 'Talladega' && PlayState.isStoryMode) System.exit(0);
 
+				case "Edit":
+					MusicBeatState.switchState(new ChartingState());
 				case 'BACK':
 					menuItems = menuItemsOG;
 					regenMenu();

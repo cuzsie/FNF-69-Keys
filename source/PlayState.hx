@@ -465,6 +465,14 @@ class PlayState extends MusicBeatState
 
 				var ground:BGElement = new BGElement('WBG/Ground', -1320, 590, 1, 1, 4);
 				add(ground);
+				
+				add(new MansionDebris(-300, -1700, 'norm', 0.75, 1, 0, 1));
+				add(new MansionDebris(-1000, -1750, 'rect', 0.75, 2, 0, 1));
+				add(new MansionDebris(-600, -1100, 'tiny', 0.75, 1.5, 0, 1));
+				add(new MansionDebris(900, -1850, 'spike', 0.75, 1.2, 0, 1));
+				add(new MansionDebris(1500, -1300, 'small', 0.75, 1.5, 0, 1));
+				add(new MansionDebris(-600, -800, 'spike', 0.75, 1.3, 0, 1));
+				add(new MansionDebris(-1000, -900, 'small', 0.75, 1.7, 0, 1));
 			case 'soothing-power' | 'thunderstorm' | 'dissasembler':
 				defaultCamZoom = 0.8;
 				curStage = 'out';
@@ -2652,17 +2660,6 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (FlxG.keys.justPressed.SEVEN && !endingSong)
-		{
-			persistentUpdate = false;
-			paused = true;
-			MusicBeatState.switchState(new ChartingState());
-
-			#if desktop
-			DiscordClient.changePresence("Chart Editor", null, null, true);
-			#end
-		}
-
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
 
@@ -2689,12 +2686,6 @@ class PlayState extends MusicBeatState
 			iconP2.animation.curAnim.curFrame = 1;
 		else
 			iconP2.animation.curAnim.curFrame = 0;
-
-		if (FlxG.keys.justPressed.EIGHT) {
-			persistentUpdate = false;
-			paused = true;
-			MusicBeatState.switchState(new CharacterEditorState(SONG.player2));
-		}
 
 		if (startingSong)
 		{
@@ -3027,62 +3018,17 @@ class PlayState extends MusicBeatState
 			eventNotes.shift();
 		}
 
-		if (!inCutscene) {
-			if(!cpuControlled) {
+		if (!inCutscene) 
+		{
+			if(!cpuControlled)
+			{
 				keyShit();
-			} else if(boyfriend.holdTimer > Conductor.stepCrochet * 0.001 * boyfriend.singDuration && boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss')) {
+			} 
+			else if(boyfriend.holdTimer > Conductor.stepCrochet * 0.001 * boyfriend.singDuration && boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss')) 
+			{
 				boyfriend.dance();
 			}
 		}
-
-		//super.update(elapsed); //TEST
-		
-		#if debug
-		if(!endingSong && !startingSong) {
-			if (FlxG.keys.justPressed.ONE)
-				FlxG.sound.music.onComplete();
-			if(FlxG.keys.justPressed.TWO) { //Go 10 seconds into the future :O
-				FlxG.sound.music.pause();
-				vocals.pause();
-				Conductor.songPosition += 10000;
-				notes.forEachAlive(function(daNote:Note)
-				{
-					if(daNote.strumTime + 800 < Conductor.songPosition) {
-						daNote.active = false;
-						daNote.visible = false;
-
-						daNote.kill();
-						notes.remove(daNote, true);
-						daNote.destroy();
-					}
-				});
-				for (i in 0...unspawnNotes.length) {
-					var daNote:Note = unspawnNotes[0];
-					if(daNote.strumTime + 800 >= Conductor.songPosition) {
-						break;
-					}
-
-					daNote.active = false;
-					daNote.visible = false;
-
-					daNote.kill();
-					unspawnNotes.splice(unspawnNotes.indexOf(daNote), 1);
-					daNote.destroy();
-				}
-
-				FlxG.sound.music.time = Conductor.songPosition;
-				FlxG.sound.music.play();
-
-				vocals.time = Conductor.songPosition;
-				vocals.play();
-			}
-		}
-
-		setOnLuas('cameraX', camFollowPos.x);
-		setOnLuas('cameraY', camFollowPos.y);
-		setOnLuas('botPlay', PlayState.cpuControlled);
-		callOnLuas('onUpdatePost', [elapsed]);
-		#end
 	}
 
 	public function getControl(key:String) {
@@ -3874,15 +3820,75 @@ class PlayState extends MusicBeatState
 		];
 
 		var nH = [
-			controls.B1,
-			controls.B2,
-			controls.B3,
-			controls.B4,
-			controls.B5,
-			controls.B6,
-			controls.B7,
-			controls.B8,
-			controls.B9
+			controls.SIX_1,
+			controls.SIX_2,
+			controls.SIX_3,
+			controls.SIX_4,
+			controls.SIX_5,
+			controls.SIX_6,
+			controls.SIX_7,
+			controls.SIX_8,
+			controls.SIX_9,
+			controls.SIX_10,
+			controls.SIX_11,
+			controls.SIX_12,
+			controls.SIX_13,
+			controls.SIX_14,
+			controls.SIX_15,
+			controls.SIX_16,
+			controls.SIX_17,
+			controls.SIX_18,
+			controls.SIX_19,
+			controls.SIX_20,
+			controls.SIX_21,
+			controls.SIX_22,
+			controls.SIX_23,
+			controls.SIX_24,
+			controls.SIX_25,
+			controls.SIX_26,
+			controls.SIX_27,
+			controls.SIX_28,
+			controls.SIX_29,
+			controls.SIX_30,
+			controls.SIX_31,
+			controls.SIX_32,
+			controls.SIX_33,
+			controls.SIX_34,
+			controls.SIX_35,
+			controls.SIX_36,
+			controls.SIX_37,
+			controls.SIX_38,
+			controls.SIX_39,
+			controls.SIX_40,
+			controls.SIX_41,
+			controls.SIX_42,
+			controls.SIX_43,
+			controls.SIX_44,
+			controls.SIX_45,
+			controls.SIX_46,
+			controls.SIX_47,
+			controls.SIX_48,
+			controls.SIX_49,
+			controls.SIX_50,
+			controls.SIX_51,
+			controls.SIX_52,
+			controls.SIX_53,
+			controls.SIX_54,
+			controls.SIX_55,
+			controls.SIX_56,
+			controls.SIX_57,
+			controls.SIX_58,
+			controls.SIX_59,
+			controls.SIX_60,
+			controls.SIX_61,
+			controls.SIX_62,
+			controls.SIX_63,
+			controls.SIX_64,
+			controls.SIX_65,
+			controls.SIX_66,
+			controls.SIX_67,
+			controls.SIX_68,
+			controls.SIX_69
 		];
 
 
@@ -3906,15 +3912,75 @@ class PlayState extends MusicBeatState
 		];
 
 		var nP = [
-			controls.B1_P,
-			controls.B2_P,
-			controls.B3_P,
-			controls.B4_P,
-			controls.B5_P,
-			controls.B6_P,
-			controls.B7_P,
-			controls.B8_P,
-			controls.B9_P
+			controls.SIX_1_P,
+			controls.SIX_2_P,
+			controls.SIX_3_P,
+			controls.SIX_4_P,
+			controls.SIX_5_P,
+			controls.SIX_6_P,
+			controls.SIX_7_P,
+			controls.SIX_8_P,
+			controls.SIX_9_P,
+			controls.SIX_10_P,
+			controls.SIX_11_P,
+			controls.SIX_12_P,
+			controls.SIX_13_P,
+			controls.SIX_14_P,
+			controls.SIX_15_P,
+			controls.SIX_16_P,
+			controls.SIX_17_P,
+			controls.SIX_18_P,
+			controls.SIX_19_P,
+			controls.SIX_20_P,
+			controls.SIX_21_P,
+			controls.SIX_22_P,
+			controls.SIX_23_P,
+			controls.SIX_24_P,
+			controls.SIX_25_P,
+			controls.SIX_26_P,
+			controls.SIX_27_P,
+			controls.SIX_28_P,
+			controls.SIX_29_P,
+			controls.SIX_30_P,
+			controls.SIX_31_P,
+			controls.SIX_32_P,
+			controls.SIX_33_P,
+			controls.SIX_34_P,
+			controls.SIX_35_P,
+			controls.SIX_36_P,
+			controls.SIX_37_P,
+			controls.SIX_38_P,
+			controls.SIX_39_P,
+			controls.SIX_40_P,
+			controls.SIX_41_P,
+			controls.SIX_42_P,
+			controls.SIX_43_P,
+			controls.SIX_44_P,
+			controls.SIX_45_P,
+			controls.SIX_46_P,
+			controls.SIX_47_P,
+			controls.SIX_48_P,
+			controls.SIX_49_P,
+			controls.SIX_50_P,
+			controls.SIX_51_P,
+			controls.SIX_52_P,
+			controls.SIX_53_P,
+			controls.SIX_54_P,
+			controls.SIX_55_P,
+			controls.SIX_56_P,
+			controls.SIX_57_P,
+			controls.SIX_58_P,
+			controls.SIX_59_P,
+			controls.SIX_60_P,
+			controls.SIX_61_P,
+			controls.SIX_62_P,
+			controls.SIX_63_P,
+			controls.SIX_64_P,
+			controls.SIX_65_P,
+			controls.SIX_66_P,
+			controls.SIX_67_P,
+			controls.SIX_68_P,
+			controls.SIX_69_P
 		];
 
 
@@ -3938,16 +4004,77 @@ class PlayState extends MusicBeatState
 		];
 
 		var nR = [
-			controls.B1_R,
-			controls.B2_R,
-			controls.B3_R,
-			controls.B4_R,
-			controls.B5_R,
-			controls.B6_R,
-			controls.B7_R,
-			controls.B8_R,
-			controls.B9_R
+			controls.SIX_1_R,
+			controls.SIX_2_R,
+			controls.SIX_3_R,
+			controls.SIX_4_R,
+			controls.SIX_5_R,
+			controls.SIX_6_R,
+			controls.SIX_7_R,
+			controls.SIX_8_R,
+			controls.SIX_9_R,
+			controls.SIX_10_R,
+			controls.SIX_11_R,
+			controls.SIX_12_R,
+			controls.SIX_13_R,
+			controls.SIX_14_R,
+			controls.SIX_15_R,
+			controls.SIX_16_R,
+			controls.SIX_17_R,
+			controls.SIX_18_R,
+			controls.SIX_19_R,
+			controls.SIX_20_R,
+			controls.SIX_21_R,
+			controls.SIX_22_R,
+			controls.SIX_23_R,
+			controls.SIX_24_R,
+			controls.SIX_25_R,
+			controls.SIX_26_R,
+			controls.SIX_27_R,
+			controls.SIX_28_R,
+			controls.SIX_29_R,
+			controls.SIX_30_R,
+			controls.SIX_31_R,
+			controls.SIX_32_R,
+			controls.SIX_33_R,
+			controls.SIX_34_R,
+			controls.SIX_35_R,
+			controls.SIX_36_R,
+			controls.SIX_37_R,
+			controls.SIX_38_R,
+			controls.SIX_39_R,
+			controls.SIX_40_R,
+			controls.SIX_41_R,
+			controls.SIX_42_R,
+			controls.SIX_43_R,
+			controls.SIX_44_R,
+			controls.SIX_45_R,
+			controls.SIX_46_R,
+			controls.SIX_47_R,
+			controls.SIX_48_R,
+			controls.SIX_49_R,
+			controls.SIX_50_R,
+			controls.SIX_51_R,
+			controls.SIX_52_R,
+			controls.SIX_53_R,
+			controls.SIX_54_R,
+			controls.SIX_55_R,
+			controls.SIX_56_R,
+			controls.SIX_57_R,
+			controls.SIX_58_R,
+			controls.SIX_59_R,
+			controls.SIX_60_R,
+			controls.SIX_61_R,
+			controls.SIX_62_R,
+			controls.SIX_63_R,
+			controls.SIX_64_R,
+			controls.SIX_65_R,
+			controls.SIX_66_R,
+			controls.SIX_67_R,
+			controls.SIX_68_R,
+			controls.SIX_69_R
 		];
+
 
 		var upP = controls.NOTE_UP_P;
 		var rightP = controls.NOTE_RIGHT_P;
@@ -4118,15 +4245,75 @@ class PlayState extends MusicBeatState
 		];
 
 		var nP = [
-			controls.B1_P,
-			controls.B2_P,
-			controls.B3_P,
-			controls.B4_P,
-			controls.B5_P,
-			controls.B6_P,
-			controls.B7_P,
-			controls.B8_P,
-			controls.B9_P
+			controls.SIX_1_P,
+			controls.SIX_2_P,
+			controls.SIX_3_P,
+			controls.SIX_4_P,
+			controls.SIX_5_P,
+			controls.SIX_6_P,
+			controls.SIX_7_P,
+			controls.SIX_8_P,
+			controls.SIX_9_P,
+			controls.SIX_10_P,
+			controls.SIX_11_P,
+			controls.SIX_12_P,
+			controls.SIX_13_P,
+			controls.SIX_14_P,
+			controls.SIX_15_P,
+			controls.SIX_16_P,
+			controls.SIX_17_P,
+			controls.SIX_18_P,
+			controls.SIX_19_P,
+			controls.SIX_20_P,
+			controls.SIX_21_P,
+			controls.SIX_22_P,
+			controls.SIX_23_P,
+			controls.SIX_24_P,
+			controls.SIX_25_P,
+			controls.SIX_26_P,
+			controls.SIX_27_P,
+			controls.SIX_28_P,
+			controls.SIX_29_P,
+			controls.SIX_30_P,
+			controls.SIX_31_P,
+			controls.SIX_32_P,
+			controls.SIX_33_P,
+			controls.SIX_34_P,
+			controls.SIX_35_P,
+			controls.SIX_36_P,
+			controls.SIX_37_P,
+			controls.SIX_38_P,
+			controls.SIX_39_P,
+			controls.SIX_40_P,
+			controls.SIX_41_P,
+			controls.SIX_42_P,
+			controls.SIX_43_P,
+			controls.SIX_44_P,
+			controls.SIX_45_P,
+			controls.SIX_46_P,
+			controls.SIX_47_P,
+			controls.SIX_48_P,
+			controls.SIX_49_P,
+			controls.SIX_50_P,
+			controls.SIX_51_P,
+			controls.SIX_52_P,
+			controls.SIX_53_P,
+			controls.SIX_54_P,
+			controls.SIX_55_P,
+			controls.SIX_56_P,
+			controls.SIX_57_P,
+			controls.SIX_58_P,
+			controls.SIX_59_P,
+			controls.SIX_60_P,
+			controls.SIX_61_P,
+			controls.SIX_62_P,
+			controls.SIX_63_P,
+			controls.SIX_64_P,
+			controls.SIX_65_P,
+			controls.SIX_66_P,
+			controls.SIX_67_P,
+			controls.SIX_68_P,
+			controls.SIX_69_P
 		];
 
 		var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];

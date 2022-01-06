@@ -44,10 +44,10 @@ class Main extends Sprite
 		[2, 3, 3, 2],
 		[0, 1, 2, 2, 1, 0],
 		[0, 1, 2, 3, 2, 1, 0],
-		[0, 1, 2, 1, 3, 1, 2, 1, 0],
+		[0, 1, 2, 1, 3, 1, 2, 1, 0, 0, 0, 1, 2, 1, 3, 1, 2, 1, 0, 0, 0, 1, 2, 1, 3, 1, 2, 1, 0, 0, 0, 1, 2, 1, 3, 1, 2, 1, 0, 0, 0, 1, 2, 1, 3, 1, 2, 1, 0, 0, 0, 1, 2, 1, 3, 1, 2, 1, 0, 0, 0, 1, 2, 1, 3, 1, 2, 1, 0],
 		[3]
 	];
-	public static var letterMax:Array<Int> = [9, 4];
+	public static var letterMax:Array<Int> = [69, 4];
 	public static var skinName:Array<String> = ['assets', 'alter'];
 	public static var gfxDir:Array<String> = ['LEFT', 'DOWN', 'UP', 'RIGHT', 'SPACE'];
 	public static var charDir:Array<String> = ['LEFT', 'DOWN', 'UP', 'RIGHT', 'UP'];
