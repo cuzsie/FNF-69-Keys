@@ -39,6 +39,7 @@ class OptionsState extends MusicBeatState
 	var lanText:FlxText;
 	var resetScreen:FlxSprite;
 	var resetText:FlxText;
+	
 
 	override function create() {
 		#if desktop
