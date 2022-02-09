@@ -37,6 +37,7 @@ import openfl.media.Sound;
 import openfl.net.FileReference;
 import openfl.utils.ByteArray;
 import openfl.utils.Assets as OpenFlAssets;
+import flixel.FlxCamera;
 #if MODS_ALLOWED
 import sys.io.File;
 import sys.FileSystem;
@@ -138,6 +139,9 @@ class ChartingState extends MusicBeatState
 
 	var gridLayer:FlxTypedGroup<FlxSprite>;
 
+	private var camGame:FlxCamera;
+	private var camHud:FlxCamera;
+
 	override function create()
 	{
 		#if desktop
@@ -145,9 +149,18 @@ class ChartingState extends MusicBeatState
 		DiscordClient.changePresence("Chart Editor", StringTools.replace(PlayState.SONG.song, '-', ' '));
 		#end
 
+		camGame = new FlxCamera();
+		camHud = new FlxCamera();
+		camHud.bgColor.alpha = 0;
+
+		FlxG.cameras.reset(camGame);
+		FlxG.cameras.add(camHud);
+		FlxCamera.defaultCameras = [camGame];
+
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.scrollFactor.set();
 		bg.color = 0xFF222222;
+		// bg.cameras = [camHud]; we cant do this cuz it is in front of camgame 
 		add(bg);
 
 		gridLayer = new FlxTypedGroup<FlxSprite>();
@@ -218,6 +231,7 @@ class ChartingState extends MusicBeatState
 	
 		bpmTxt = new FlxText(1100, 50, 0, "", 16);
 		bpmTxt.scrollFactor.set();
+		bpmTxt.cameras = [camHud];
 		add(bpmTxt);
 
 		/*
@@ -259,8 +273,11 @@ class ChartingState extends MusicBeatState
 		tipText.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT/*, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK*/);
 		//tipText.borderSize = 2;
 		tipText.scrollFactor.set();
+		tipText.cameras = [camHud];
 		add(tipText);
 		add(UI_box);
+
+		UI_box.cameras = [camHud];
 
 		addSongUI();
 		addSectionUI();

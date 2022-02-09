@@ -64,7 +64,7 @@ class FreeplayState extends MusicBeatState
 		{
 			var songArray:Array<String> = initSonglist[i].split(":");
 
-			if (songArray[0] != 'Talladega' || FlxG.save.data.ending[2]) //this is a fucking bullshit condition but whatever
+			if (songArray[0] != 'Talladega' || FlxG.save.data.ending[2])
 			{
 				addSong(songArray[0], 0, songArray[1]);
 				songs[songs.length-1].color = Std.parseInt(songArray[2]);
@@ -76,31 +76,10 @@ class FreeplayState extends MusicBeatState
 			coolColors.push(Std.parseInt(colorsList[i]));
 		}
 
-		/* 
-			if (FlxG.sound.music != null)
-			{
-				if (!FlxG.sound.music.playing)
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
-			}
-		 */
-
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
-
-		/*
-		for (i in 1...WeekData.songsNames.length) {
-			#if !debug
-			if (StoryMenuState.weekUnlocked[i])
-			#end
-				addWeek(WeekData.songsNames[i], i, songsHeads[i-1]);
-		}
-		*/
-
-		// LOAD MUSIC
-
-		// LOAD CHARACTERS
 
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.screenCenter(X);
@@ -120,13 +99,8 @@ class FreeplayState extends MusicBeatState
 			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
 			icon.sprTracker = songText;
 
-			// using a FlxGroup is too much fuss!
 			iconArray.push(icon);
 			add(icon);
-
-			// songText.x += 40;
-			// DONT PUT X IN THE FIRST PARAMETER OF new ALPHABET() !!
-			// songText.screenCenter(X);
 		}
 
 		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
@@ -149,23 +123,6 @@ class FreeplayState extends MusicBeatState
 
 		var swag:Alphabet = new Alphabet(1, 0, "swag");
 
-		// JUST DOIN THIS SHIT FOR TESTING!!!
-		/* 
-			var md:String = Markdown.markdownToHtml(Assets.getText('CHANGELOG.md'));
-
-			var texFel:TextField = new TextField();
-			texFel.width = FlxG.width;
-			texFel.height = FlxG.height;
-			// texFel.
-			texFel.htmlText = md;
-
-			FlxG.stage.addChild(texFel);
-
-			// scoreText.textField.htmlText = md;
-
-			trace(md);
-		 */
-
 		var textBG:FlxSprite = new FlxSprite(0, FlxG.height - 26).makeGraphic(FlxG.width, 26, 0xFF000000);
 		textBG.alpha = 0.6;
 		add(textBG);
@@ -181,7 +138,8 @@ class FreeplayState extends MusicBeatState
 		super.create();
 	}
 
-	override function closeSubState() {
+	override function closeSubState() 
+	{
 		changeSelection();
 		super.closeSubState();
 	}
@@ -197,6 +155,7 @@ class FreeplayState extends MusicBeatState
 			songCharacters = ['bf'];
 
 		var num:Int = 0;
+
 		for (song in songs)
 		{
 			addSong(song, weekNum, songCharacters[num]);
@@ -208,6 +167,7 @@ class FreeplayState extends MusicBeatState
 
 	var instPlaying:Int = -1;
 	private static var vocals:FlxSound = null;
+	
 	override function update(elapsed:Float)
 	{
 		if (FlxG.sound.music.volume < 0.7)
@@ -316,21 +276,7 @@ class FreeplayState extends MusicBeatState
 
 	function changeDiff(change:Int = 0)
 	{
-		curDifficulty += change;
-
-		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficultyStuff.length-1;
-		if (curDifficulty >= CoolUtil.difficultyStuff.length)
-			curDifficulty = 0;
-
-		#if !switch
-		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
-		intendedRating = Highscore.getRating(songs[curSelected].songName, curDifficulty);
-		#end
-
-		PlayState.storyDifficulty = curDifficulty;
-		var diffTxt = ['MANIA', 'EASY', 'CANON'];
-		diffText.text = '< ' + diffTxt[curDifficulty] + ' >';
+		diffText.text = '< 69 KEYS >';
 		positionHighscore();
 	}
 
@@ -380,13 +326,9 @@ class FreeplayState extends MusicBeatState
 			bullShit++;
 
 			item.alpha = 0.6;
-			// item.setGraphicSize(Std.int(item.width * 0.8));
 
 			if (item.targetY == 0)
-			{
 				item.alpha = 1;
-				// item.setGraphicSize(Std.int(item.width));
-			}
 		}
 		changeDiff();
 	}

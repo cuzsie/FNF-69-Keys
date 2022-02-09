@@ -30,7 +30,7 @@ class MainMenuState extends MusicBeatState
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
 	
-	var optionShit:Array<String> = ['story_mode', 'freeplay', 'credits', 'options'];
+	var optionShit:Array<String> = ['freeplay', 'credits', 'options'];
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
@@ -85,24 +85,6 @@ class MainMenuState extends MusicBeatState
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
-		var star:Array<FlxSprite> = [];
-
-		for (i in 0...3)
-		{
-			var gfx = 'endstar';
-			if (!FlxG.save.data.ending[i]) gfx += '_e';
-
-			star[i] = new FlxSprite().loadGraphic(Paths.image(gfx));
-			star[i].scrollFactor.set();
-			star[i].screenCenter(X);
-			star[i].y = 0;
-			star[i].x += (i - 1) * 90;
-			star[i].scale.x = 0.75;
-			star[i].scale.y = 0.75;
-			star[i].antialiasing = true;
-			add(star[i]);
-		}
-
 		for (i in 0...optionShit.length)
 		{
 			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
@@ -124,7 +106,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Mod created by Cuzsie | 69 Key v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
